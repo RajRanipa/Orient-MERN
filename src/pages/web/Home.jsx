@@ -101,14 +101,14 @@ const Home = () => {
 
         {/* === Foreground Content === */}
         <Container className="relative z-20 flex flex-col items-center justify-center text-center h-[calc(100vh-72px)]">
-          <div className="flex flex-col items-center justify-center gap-4">
+          <ScrollReveal className="flex flex-col items-center justify-center gap-4" id={"hero_text_div"}>
             <h1 className="text-4xl md:text-6xl font-bold text-white">
               Ignite Your Performance
             </h1>
             <p className="mt-4 max-w-xl text-white text-opacity-90 text-lg">
               Discover ceramic fiber insulation reimagined for the modern industry.
             </p>
-          </div>
+          </ScrollReveal>
         </Container>
       </section>
       <About />
