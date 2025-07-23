@@ -3,30 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'NoirPro-Regular';
-    src: url("../fonts/NoirPro-Regular/NoirPro-Regular.eot");
-    src: url("../fonts/fontawesome-webfont-.eot#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/NoirPro-Regular/NoirPro-Regular.woff2") format("woff2"), url("../fonts/NoirPro-Regular/NoirPro-Regular.woff") format("woff"), url("../fonts/NoirPro-Regular/NoirPro-Regular.ttf") format("truetype"), url("../fonts/NoirPro-Regular/NoirPro-Regular.svg#fontawesomeregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NoirPro-Light';
-    src: url("../fonts/NoirPro-Light/NoirPro-Light.eot");
-    src: url("../fonts/fontawesome-webfont-.eot#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/NoirPro-Light/NoirPro-Light.woff2") format("woff2"), url("../fonts/NoirPro-Light/NoirPro-Light.woff") format("woff"), url("../fonts/NoirPro-Light/NoirPro-Light.ttf") format("truetype"), url("../fonts/NoirPro-Light/NoirPro-Light.svg#fontawesomeregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NoirPro-SemiBold';
-    src: url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.eot");
-    src: url("../fonts/fontawesome-webfont-.eot#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.woff2") format("woff2"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.woff") format("woff"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.ttf") format("truetype"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.svg#fontawesomeregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Sangbleuogserif';
     src: url('https://uploads-ssl.webflow.com/61dff2e527e69016db378cd3/61dffd372a617f68280393a6_SangBleuOGSerif-LightItalic.woff') format('woff');
     font-weight: 300;
