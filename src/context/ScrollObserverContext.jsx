@@ -22,7 +22,8 @@ export const ScrollObserverProvider = ({ children }) => {
         threshold: 0.01, // even 1% visible triggers
       }
     );
-
+    console.log("ScrollObserver initialized");
+    
     return () => observer.current?.disconnect();
   }, []);
 

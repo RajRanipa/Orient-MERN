@@ -18,7 +18,7 @@ import { ScrollObserverProvider } from '../context/ScrollObserverContext';
 
 const WebRoutes = () => {
   return (
-    <ScrollObserverProvider>
+    // <ScrollObserverProvider>
       <Routes>
         {/* Public pages */}
         <Route element={<WebLayout />}>
@@ -40,7 +40,7 @@ const WebRoutes = () => {
           <Route path="/signup" element={<PageTransition><Signup /></PageTransition>} />
         </Route>
       </Routes>
-    </ScrollObserverProvider>
+    // </ScrollObserverProvider>
   );
 };
 
