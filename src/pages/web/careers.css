@@ -1,0 +1,184 @@
+/* * * * * * * * * * * * * career page design * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.career-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    height: calc(100% + var(--padding-top));
+    position: absolute;
+    background: rgb(245 245 245);
+    background-size: 200% 200%;
+    /* background-position: calc(var(--padding-top)); */
+    z-index: 5;
+    top: calc(0px - var(--padding-top));
+}
+.career-background{
+    position: relative;
+}
+.career-wrapper::before {
+    content: '';
+    width: 100vw;
+    height: calc(100% + var(--padding-top));
+    position: absolute;
+    background: url(/front-image/careerbg1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+    opacity: 0.3;
+    top: calc(0px - var(--padding-top));
+}
+
+.career-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    padding: calc(4rem) 1rem;
+    padding-top: calc(var(--padding-top) + 4rem);
+    color: var(--cl-dark);
+    z-index: 9;
+    overflow: visible;
+}
+
+.career-heading {
+    text-align: center;
+    font-size: max(3.5em);
+    text-transform: capitalize;
+    z-index: 9;
+}
+
+.career-wrapper p {
+    max-width: 100%;
+    width: max(40vw, 570px);
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1em;
+    line-height: normal;
+    z-index: 9;
+}
+
+.career-divform-wrapper,
+.form-wrapper,
+.form-wrapper form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    z-index: 9;
+}
+
+
+.flex-50-child {
+    flex: 0 0 50%;
+    padding: 2rem 1rem;
+    text-transform: capitalize;
+    width: 100%;
+    max-width: 100%;
+}
+
+.more-info.flex-50-child,
+.address-wrapper.flex-50-child {
+    flex: 0.6 0 50%;
+    align-self: self-start;
+}
+
+.more-info h1 {
+    font-size: 2em;
+}
+
+.more-info p {
+    font-size: 1em;
+}
+
+.form-wrapper form {
+    align-self: center;
+    background: #ffffff80;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    min-width: fit-content;
+    width: max(80%, 400px);
+    height: fit-content;
+    max-width: 100%;
+    box-shadow: inset 4px 4px 8px rgb(0 0 0 / 20%), inset -4px -4px 8px rgb(255, 255, 255);
+}
+
+.form-wrapper form input,
+.form-wrapper form textarea {
+    padding: 10px 20px;
+    font-size: 1em;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: none;
+    max-width: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 25%),
+        -4px -4px 8px rgb(245 245 245),
+        inset 2px 2px 4px rgba(255, 255, 255, 5),
+        inset -1px -1px 2px rgb(0 0 0 / 25%);
+    font-family: sans-serif;
+}
+
+.form-wrapper form div {
+    max-width: 100%;
+    width: 100%;
+}
+
+.form-wrapper form h1 {
+    text-transform: capitalize;
+    color: var(--cl-dark);
+    word-spacing: 7px;
+}
+
+.form-wrapper form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 25%),
+        -4px -4px 8px rgb(245 245 245),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+        inset -1px -1px 2px rgb(0 0 0 / 25%);
+    text-transform: capitalize;
+    --bg-opacity: 1;
+    background: linear-gradient(125deg, hsla(214, 70%, 37%, var(--bg-opacity)), hsla(224, 57%, 51%, var(--bg-opacity)), hsla(203, 79%, 45%, var(--bg-opacity)), hsla(198, 100%, 63%, var(--bg-opacity)));
+    border-radius: 7px;
+    transition: all 0.3s;
+    background-size: 200% 200%;
+    background-position: 30% 40%;
+    color: var(--cl-white);
+}
+
+.form-wrapper form button:hover {
+    transition: all 0.3s;
+    background-position: 80% 80%;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 25%),
+        -4px -4px 8px rgb(245 245 245),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+        inset -1px -1px 2px rgb(0 0 0 / 25%);
+    transform: scale(1.05);
+}
+
+.form-wrapper form input[type="file"] {
+    color: gray;
+}
+
+.successMessage,
+.errorMessage {
+    font-size: 0.8em;
+    text-align: center;
+    display: none;
+    color: red;
+}
+
+.successMessage {
+    color: green;
+}

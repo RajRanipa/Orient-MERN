@@ -1,0 +1,106 @@
+
+.gradient-bg::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: calc(var(--padding-top));
+    left: 0;
+    background: radial-gradient(60vw circle at 90% 15vh, var(--cl-sky-logo), transparent);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+h1.contact-h1 {
+    font-size: 3em;
+    text-align: center;
+    color: var(--cl-dark);
+    text-transform: capitalize;
+    font-family: Sangbleuogsans, sans-serif;
+    padding-top: calc(var(--padding-top));
+}
+
+.flex-50 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+
+.enquiry-wrapper.flex-50 {
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.form-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-title-wrapper,
+.info-address-wrapper {
+    padding: 1rem;
+}
+
+h1.info-title,
+h1.address-title {
+    background: linear-gradient(to right, var(--cl-blue-logo), var(--cl-sky-logo));
+    padding: 4px 1em;
+    color: var(--cl-white);
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.info-title-wrapper p,
+.info-address-wrapper p {
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    color: var(--cl-dark-gray);
+}
+
+.enquiry-QR-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquiry-QR-div {
+    height: 100%;
+    width: max(80%, 400px);
+    max-width: 100%;
+    padding: 2rem;
+    background-color: #0F1C36;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2rem;
+    aspect-ratio: 3/4;
+}
+
+.enquiry-QR-div p {
+    font-size: 1.5em;
+    color: var(--cl-white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.enquiry-QR-div img {
+    max-width: 50%;
+    max-height: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.company-title {
+    font-size: 1.2em;
+}

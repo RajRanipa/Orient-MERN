@@ -1,0 +1,45 @@
+.header-wrraper::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    backdrop-filter: blur(var(--header-blur));
+}
+
+.letters-a {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    font-size: 1em;
+    line-height: normal;
+}
+
+.letters-a .wrap-letter::after {
+    content: attr(data-letter);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.letters-a:hover .wrap-letter {
+    --wtap-transition: 0.25s;
+    transition-duration: 0.25s;
+    transform: translateY(-100%);
+}
+
+.mobile-menu {
+    padding: 10px 20px;
+    position: absolute;
+    top: calc(15px + var(--padding-top));
+    right: 15px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    /* These help fix z-index + blur issues */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(calc(10px));
+}

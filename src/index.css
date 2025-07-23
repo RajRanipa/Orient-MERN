@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'NoirPro-Regular';
+    src: url("../fonts/NoirPro-Regular/NoirPro-Regular.eot");
+    src: url("../fonts/fontawesome-webfont-.eot#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/NoirPro-Regular/NoirPro-Regular.woff2") format("woff2"), url("../fonts/NoirPro-Regular/NoirPro-Regular.woff") format("woff"), url("../fonts/NoirPro-Regular/NoirPro-Regular.ttf") format("truetype"), url("../fonts/NoirPro-Regular/NoirPro-Regular.svg#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoirPro-Light';
+    src: url("../fonts/NoirPro-Light/NoirPro-Light.eot");
+    src: url("../fonts/fontawesome-webfont-.eot#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/NoirPro-Light/NoirPro-Light.woff2") format("woff2"), url("../fonts/NoirPro-Light/NoirPro-Light.woff") format("woff"), url("../fonts/NoirPro-Light/NoirPro-Light.ttf") format("truetype"), url("../fonts/NoirPro-Light/NoirPro-Light.svg#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoirPro-SemiBold';
+    src: url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.eot");
+    src: url("../fonts/fontawesome-webfont-.eot#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.woff2") format("woff2"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.woff") format("woff"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.ttf") format("truetype"), url("../fonts/NoirPro-SemiBold/NoirPro-SemiBold.svg#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sangbleuogserif';
+    src: url('https://uploads-ssl.webflow.com/61dff2e527e69016db378cd3/61dffd372a617f68280393a6_SangBleuOGSerif-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sangbleuogserif';
+    src: url('https://uploads-ssl.webflow.com/61dff2e527e69016db378cd3/61dffd434e1ac472ed80422a_SangBleuOGSerif-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sangbleuogserif';
+    src: url('https://uploads-ssl.webflow.com/61dff2e527e69016db378cd3/61dffd4cbb525b6f6029a74b_SangBleuOGSerif-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sangbleuogserif';
+    src: url('https://uploads-ssl.webflow.com/61dff2e527e69016db378cd3/61dffd524cb1aa540f1dd64d_SangBleuOGSerif-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sangbleuogsans';
+    src: url('https://uploads-ssl.webflow.com/61dff2e527e69016db378cd3/626a93434fb5c85859d2630f_SangBleuOGSans-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: webflow-icons;
+    src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+/* Paste this at the top of your main CSS file */
+
+/* Weight 300 (Light) */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  /* unicode-range is for performance, you can keep it */
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Weight 300 (Light) Italic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUQjIg1_i6t8kCHKm459Wlhyw8_D-A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Weight 400 (Regular) */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Weight 700 (Bold) */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ...and so on for all other weights and styles you copied. */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap'); */
+
+h1,
+h2,
+h3,
+h6 {
+    font-family: Sangbleuogserif, 'Times New Roman', sans-serif;
+    font-weight: lighter;
+}
+
+p,
+a {
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+@layer components {
+  .btn-hover {
+    @apply transition-colors duration-200 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400;
+  }
+
+  .page-enter {
+    @apply opacity-0 translate-y-4;
+  }
+
+  .page-enter-active {
+    @apply opacity-100 translate-y-0 transition duration-300 ease-out;
+  }
+}
+
+:root {
+  /* === Backgrounds === */
+  --ui-bg-light: 255 255 255;
+  --ui-bg-medium: 245 245 250;
+  --ui-bg-dark: 230 230 235;
+
+  /* === Text Colors === */
+  --ui-text-strong: 17 24 39;
+  --ui-text-regular: 15 28 54;
+  --ui-text-muted: 107 114 128;
+  --ui-text-signature: 0 108 250;
+  --ui-text-hover: 0 90 210;
+
+  /* === Borders === */
+  --ui-border-light: 229 231 235;
+  --ui-border-dark: 209 213 219;
+
+  /* === Brand / CTA === */
+  --ui-primary-main: 0 108 250;
+  --ui-primary-hover: 0 90 210;
+  --ui-secondary-main: 255 195 0;
+  --ui-secondary-hover: 255 175 0;
+  --ui-cta-main: 0 200 83;
+  --ui-cta-hover: 0 180 73;
+
+  /* === Alerts === */
+  --ui-alert-success: 34 197 94;
+  --ui-alert-error: 239 68 68;
+  --ui-alert-info: 59 130 246;
+
+  /* === Shadows === */
+  --ui-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --ui-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --ui-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+  /* === Brand Highlights === */
+  --ui-brand-highlight: 255 0 128;
+
+  --cl-blue-logo: rgb(32 92 169);
+  --cl-sky-logo: rgb(2 175 239);
+  --logo-wrraper-height:50px;
+}
+
+.dark {
+  /* === Backgrounds === */
+  --ui-bg-light: 31 41 55;
+  --ui-bg-medium: 23 32 45;
+  --ui-bg-dark: 17 24 39;
+
+  /* === Text Colors === */
+  --ui-text-strong: 243 244 246;
+  --ui-text-regular: 203 213 225;
+  --ui-text-muted: 156 163 175;
+  --ui-text-signature: 59 130 246;
+  --ui-text-hover: 32 92 169;
+
+  /* === Borders === */
+  --ui-border-light: 107 114 128;
+  --ui-border-dark: 75 85 99;
+
+  /* === Brand / CTA === */
+  --ui-primary-main: 59 130 246;
+  --ui-primary-hover: 37 99 235;
+  --ui-secondary-main: 253 224 71;
+  --ui-secondary-hover: 250 204 21;
+  --ui-cta-main: 16 185 129;
+  --ui-cta-hover: 5 150 105;
+
+  /* === Alerts === */
+  --ui-alert-success: 22 163 74;
+  --ui-alert-error: 220 38 38;
+  --ui-alert-info: 147 197 253;
+
+  /* === Shadows === */
+  --ui-shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.05);
+  --ui-shadow-md: 0 4px 6px rgba(255, 255, 255, 0.1);
+  --ui-shadow-lg: 0 10px 15px rgba(255, 255, 255, 0.15);
+
+  /* === Brand Highlights === */
+  --ui-brand-highlight: 255 105 180;
+}
+
+
+  @layer utilities {
+    @keyframes slide-from-right {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-to-right {
+      0% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+
+    .animate-slide-from-right {
+      animation: slide-from-right 0.3s ease-out forwards;
+    }
+
+    .animate-slide-to-right {
+      animation: slide-to-right 0.3s ease-in forwards;
+    }
+  }
+
+  /* animation with scroll */
+.animate {
+    opacity: 0;
+    transform: translateX(100px);
+    /* Start outside of the viewport */
+    transition: all 1s ease-out;
+}
+
+.animate.slide-in-left {
+    transform: translateX(-100px);
+    /* Start from the left side */
+}
+
+.animate.slide-in-top {
+    transform: translateY(-100px);
+    /* Start from the top side */
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateX(0);
+    /* Reset position */
+}
