@@ -111,7 +111,7 @@
     transform: translate(calc(-100% + 40px), calc(-100% + 40px));
     width: 30px;
     height: 30px;
-    background: url(/img/cursor-click-02-svgrepo-com.svg);
+    background: url(/front-image/cursor-click-02-svgrepo-com.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     transition: transform 0.3s;
@@ -347,31 +347,31 @@
 }
 
 .blanket-div .product-image {
-    background: url(/img/blanket_crop_small.png) no-repeat;
+    background: url(/front-image/blanket_crop_small.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .board-div .product-image {
-    background: url(/img/board_crop_small.png) no-repeat;
+    background: url(/front-image/board_crop_small.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .bulk-div .product-image {
-    background: url(/img/bulk_crop_small.png) no-repeat;
+    background: url(/front-image/bulk_crop_small.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .module-div .product-image {
-    background: url(/img/module_crop_small.png) no-repeat;
+    background: url(/front-image/module_crop_small.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .paper-div .product-image {
-    background: url(/img/paper_crop_small.png) no-repeat;
+    background: url(/front-image/paper_crop_small.png) no-repeat;
     background-position: center;
     background-size: cover;
 }

@@ -30,7 +30,7 @@ const About = () => (
           </div>
         </div>
         <div className="flex flex-col lg:flex-row portrait:flex-col relative gap-20 portrait:gap-8 items-center justify-around">
-          <ScrollReveal id="perspective1" className="perspective" animation="fade-right">
+          <ScrollReveal id="perspective_one" className="perspective" animation="fade-right">
             <div className="tile" id="tile1">
               <div className="sine" id="sine1"></div>
               <div className="icon-svg">
@@ -42,7 +42,7 @@ const About = () => (
               </div>
             </div>
           </ScrollReveal>
-          <div className="perspective" id="perspective2">
+          <div id="perspective_two" className="perspective" >
             <div className="tile" id="tile2">
               <div className="sine" id="sine2"></div>
               <div className="icon-svg">
@@ -53,7 +53,7 @@ const About = () => (
               </div>
             </div>
           </div>
-          <ScrollReveal id="perspective3" className="perspective slide-in-left" animation="fade-left">
+          <ScrollReveal id="perspective_three" className="perspective" animation="fade-left">
             <div className="tile" id="tile3">
               <div className="sine" id="sine3"></div>
               <div className="icon-svg">
