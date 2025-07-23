@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import Layout from '../../components/Layout';
-import ContactForm from '../../components/form/ContactForm';
+import { useEffect } from 'react';
 import { FiMail, FiPhone, FiMapPin, FiMap } from 'react-icons/fi'; // optional icon pack
 import Container from '../../components/Container';
 import './contact.css';

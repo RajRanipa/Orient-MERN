@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Container from '../../components/Container';
 import About from './About';
 import AboutProduct from './AboutProduct';
+import ScrollReveal from '../../components/ScrollReveal';
 
 const Home = () => {
   const useHeaderColor = () => {

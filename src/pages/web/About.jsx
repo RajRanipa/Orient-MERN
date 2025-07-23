@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from '../../components/Container';
 import ScrollReveal from '../../components/ScrollReveal';
 import './home.css';
