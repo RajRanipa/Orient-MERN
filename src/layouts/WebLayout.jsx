@@ -7,13 +7,11 @@ import { useEffect } from 'react';
 const WebLayout = () => {
 
   return (
-    <ScrollObserverProvider>
-      <div className="min-h-screen max-w-screen flex flex-col overflow-hidden">
+      <div className="min-h-screen max-w-screen flex flex-col overflow-hidden raja">
         <Header />
         <Outlet />
         <Footer />
       </div>
-    </ScrollObserverProvider>
   );
 };
 
