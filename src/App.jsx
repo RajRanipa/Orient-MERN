@@ -5,6 +5,9 @@ import { AuthProvider } from './context/AuthContext';
 import MasterRoute from './routes/MasterRoutes';
 import { ToastContainer } from 'react-toastify';
 import { ScrollObserverProvider } from './context/ScrollObserverContext';
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+injectSpeedInsights();
 
 
 const App = () => {
