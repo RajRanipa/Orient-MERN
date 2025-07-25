@@ -1,10 +1,11 @@
 // File: components/Header.jsx
 
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Container from '../Container';
-import NavLink from './NavLinks';
+import NavLinkCustom from './NavLinks';
 import LogInOut from '../LogInOut';
 import MobileMenu from './MobileMenu';
 import '../header.css';
@@ -60,18 +61,18 @@ const Header = () => {
       <Container className='py-[0.5em] overflow-visible' childClassName="overflow-visible">
         <div className="flex items-center justify-between h-auto">
           {/* Logo */}
-          <a href="/" className="logo-wrraper">
+          <NavLink href="/" className="logo-wrraper">
             <div className="logo">
                 <img src="/front-image/o-brand-logo.png" alt="logo" loading="lazy" />
             </div>
             <div className="comapny-name">
               <img src="/front-image/o-text-logo.png" alt="Orient Ceramic Fibertech LLP" />
             </div>
-          </a>
+          </NavLink>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6">
-            <NavLink />
+            <NavLinkCustom />
             <LogInOut className='text-[var(--h-color)]' />
             {/* <ThemeToggle /> */}
           </div>

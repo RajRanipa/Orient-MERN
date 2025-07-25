@@ -1,7 +1,7 @@
 // components/header/MobileMenu.jsx
 
 import React, { useEffect, useRef, useState } from 'react';
-import NavLink from './NavLinks';
+import NavLinkCustom from './NavLinks';
 import { cn } from '../../utils/cn';
 
 const MobileMenu = ({ isOpen, onClose, style }) => {
@@ -46,7 +46,7 @@ const MobileMenu = ({ isOpen, onClose, style }) => {
         )}
       >
         <div className="flex flex-col space-y-4 relative">
-          <NavLink className="block text-base" onClick={onClose} />
+          <NavLinkCustom className="block text-base" onClick={onClose} />
         </div>
       </div>
     )

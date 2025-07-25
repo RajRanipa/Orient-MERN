@@ -103,22 +103,6 @@
     backdrop-filter: blur(2px);
 }
 
-.perspective::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(calc(-100% + 40px), calc(-100% + 40px));
-    width: 30px;
-    height: 30px;
-    background: url(/front-image/cursor-click-02-svgrepo-com.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: transform 0.3s;
-    animation: cursor-hover 3s forwards infinite;
-    opacity: var(--cursor-opacity);
-}
-
 .tile {
     position: relative;
     height: 100%;
@@ -548,5 +532,100 @@ a.read-more-a:hover {
         opacity: 1;
         transform: translate(0px, 0px);
         transition: all var(--t-transition);
+    }
+}
+/* ------------------------- scroll down ------------------------ */
+.scroll-down-wrapper {
+    outline: none;
+    border: none;
+    position: absolute;
+    width: max(7vw, 7vh);
+    height: max(7vw, 7vh);
+    left: max(8vw, 8vh);
+    top: 70vh;
+    z-index: 99;
+    background: var(--cl-dark);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    animation: hide-show 11s cubic-bezier(0.075, 0.82, 0.165, 1) infinite forwards;
+    cursor: pointer;
+}
+
+.scroll-down-wrapper>* {
+    pointer-events: none;
+}
+
+.scroll-down {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scroll-down .text-wrapper {
+    max-width: fit-content;
+    max-height: fit-content;
+    overflow: hidden;
+}
+
+.scroll-down p {
+    color: var(--cl-white);
+    text-transform: uppercase;
+    font-size: max(1vw, 1vh);
+    line-height: normal;
+    overflow: hidden;
+    animation: transform-text 11s cubic-bezier(0.075, 0.82, 0.165, 1) infinite forwards;
+}
+
+@keyframes hide-show {
+    0% {
+        width: 0vw;
+        height: 0vw;
+    }
+
+    30% {
+        width: max(7vw, 7vh);
+        height: max(7vw, 7vh);
+    }
+
+    80% {
+        width: max(7vw, 7vh);
+        height: max(7vw, 7vh);
+    }
+
+    100% {
+        width: 0vw;
+        height: 0vw;
+    }
+
+    90%,
+    100% {
+        width: 0vw;
+        height: 0vw;
+    }
+}
+
+@keyframes transform-text {
+    0% {
+        transform: translateY(100%);
+    }
+
+    10% {
+        transform: translateY(100%);
+    }
+
+    32% {
+        transform: translateY(0%);
+    }
+
+    75% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(100%);
     }
 }

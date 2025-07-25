@@ -15,6 +15,7 @@ import Module from '../components/products/Module';
 import Paper from '../components/products/Paper';
 import Blanket from '../components/products/Blanket';
 import { ScrollObserverProvider } from '../context/ScrollObserverContext';
+import Certificate from '../components/Certificate';
 
 const WebRoutes = () => {
   return (
@@ -34,6 +35,7 @@ const WebRoutes = () => {
           </Route>
           <Route path="/career" element={<PageTransition><Careers /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+          <Route path="/certificates" element={<PageTransition><Certificate /></PageTransition>} />
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<PageTransition><Login /></PageTransition>} />

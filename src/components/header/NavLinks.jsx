@@ -12,7 +12,7 @@ export const navLinks = [
 ];
 
 
-const NavLink = ({
+const NavLinkCustom = ({
   variant = 'header',
   className = '',
   icon = null,
@@ -23,8 +23,8 @@ const NavLink = ({
 
   const baseStyles = 'transition duration-200';
   const variantStyles = {
-    header: 'hover:text-brand-main',
-    footer: 'hover:text-brand-main',
+    header: 'hover:text-brand-main text-[var(--h-color)]',
+    footer: 'hover:text-brand-main text-gray-300',
   };
 
   return (
@@ -41,7 +41,7 @@ const NavLink = ({
             href={href}
             onClick={onClick}
             id={"navlink_"+name.toLowerCase()}
-            className={cn("text-[var(--h-color)]",
+            className={cn(
               baseStyles,
               variantStyles[variant],
               isActive && 'font-semibold',
@@ -56,11 +56,11 @@ const NavLink = ({
   );
 };
 
-NavLink.propTypes = {
+NavLinkCustom.propTypes = {
   variant: PropTypes.oneOf(['header', 'footer']),
   className: PropTypes.string,
   icon: PropTypes.element,
   onClick: PropTypes.func,
 };
 
-export default NavLink;
+export default NavLinkCustom;

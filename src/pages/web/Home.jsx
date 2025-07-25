@@ -109,6 +109,16 @@ const Home = () => {
               Discover ceramic fiber insulation reimagined for the modern industry.
             </p>
           </ScrollReveal>
+          <button class="scroll-down-wrapper" id="scroll_to_Down" onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>
+            <div class="scroll-down">
+              <div class="text-wrapper">
+                <p>scroll</p>
+              </div>
+              <div class="text-wrapper">
+                <p>down</p>
+              </div>
+            </div>
+          </button>
         </Container>
       </section>
       <About />

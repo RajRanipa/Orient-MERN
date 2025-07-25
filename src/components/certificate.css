@@ -1,0 +1,64 @@
+.certificate-bg{
+    background: radial-gradient(at 50% 60%, rgb(91 199 210 / 47%), transparent 70%, transparent 90%);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+
+.Certificates-tag {
+    margin-top: calc(var(--padding-top));
+    text-align: center;
+    font-size: 3em;
+}
+
+.Certificates-flexDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.certificate-img {
+    width: 250px;
+    height: auto;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 50%; */
+}
+
+.wrraper-div {
+    position: relative;
+    min-height: max-content;
+    padding: var(--padding-top) 0;
+}
+
+img.certificate-img:nth-child(1) {
+    transform: perspective(1000px) rotate(13deg) translate3d(calc(25vw - 50%), -10%, 70px);
+}
+
+img.certificate-img:nth-child(2) {
+    transform: perspective(1000px) rotate(-14deg) translate3d(calc(15vw - 50%), -10%, 30px);
+    z-index: -1;
+}
+
+img.certificate-img:nth-child(3) {
+    transform: perspective(1000px) rotate(41deg) translate3d(-20%, 20%, -14px);
+}
+
+img.certificate-img:nth-child(4) {
+    transform: perspective(1000px) rotate(-65deg) translate3d(-40%, -70%, -40px);
+}
+
+.Certificates-flexDiv:hover .certificate-img {
+    position: relative;
+    transition: all 0.4s ease-in;
+    transform: none;
+    top: 0;
+    left: 0;
+}

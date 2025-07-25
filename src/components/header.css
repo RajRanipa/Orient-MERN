@@ -17,11 +17,16 @@
     line-height: normal;
 }
 
+.letters-a .wrap-letter {
+    transition-duration: 0s;
+}
+
 .letters-a .wrap-letter::after {
     content: attr(data-letter);
     position: absolute;
     top: 100%;
     left: 0;
+    transition-duration: 0s;
 }
 
 .letters-a:hover .wrap-letter {

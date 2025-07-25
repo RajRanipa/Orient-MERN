@@ -19,13 +19,13 @@ const ProductBlock = () => {
                     /> */}
                     <img
                         src="/front-image/blanket_crop_small.png"
-                        srcset="
+                        srcSet="
                             /front-image/blanket_crop_small.png 600w,
                             /front-image/blanket_crop.png 1920w"
                         sizes="(max-width: 768px) 100vw, 50vw"
                         alt="High-Temperature Ceramic Fiber Blanket"
                         loading="lazy"
-                        class="blanket-img"
+                        className="blanket-img"
                     />
                 </ScrollReveal>
                 {/* Details Section */}
