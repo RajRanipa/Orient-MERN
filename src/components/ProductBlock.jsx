@@ -11,11 +11,21 @@ const ProductBlock = () => {
                     className="relative flex-1 max-w-[80%] w-full sm:max-w-[90%] lg:max-w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
-                    <img
+                    {/* <img
                         src="/front-image/blanket_crop.png"
                         alt="High-Temperature Ceramic Fiber Blanket"
                         loading="lazy"
                         className="blanket-img"
+                    /> */}
+                    <img
+                        src="/front-image/blanket_crop_small.png"
+                        srcset="
+                            /front-image/blanket_crop_small.png 600w,
+                            /front-image/blanket_crop.png 1920w"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        alt="High-Temperature Ceramic Fiber Blanket"
+                        loading="lazy"
+                        class="blanket-img"
                     />
                 </ScrollReveal>
                 {/* Details Section */}
@@ -93,21 +103,21 @@ const ProductBlock = () => {
                         Composed of high-purity <em>aluminosilicate fibers</em>, our Ceramic Fiber
                         Bulk offers exceptional thermal resistance and flexibility. A cornerstone
                         for creating other ceramic fiber products, it delivers <strong>low thermal conductivity
-                        and superior shock resistance</strong>. Perfect for industrial environments managing
+                            and superior shock resistance</strong>. Perfect for industrial environments managing
                         extreme heat, it ensures efficiency and reliability in diverse applications.
                     </p>
-                    <a 
-                        className="read-more-a" 
-                        href="/ceramic-fiber-bulk" 
-                        target="_blank" 
+                    <a
+                        className="read-more-a"
+                        href="/ceramic-fiber-bulk"
+                        target="_blank"
                         rel="noopener noreferrer"
                     >
-                            Learn More About Ceramic Fiber Bulk Applications
+                        Learn More About Ceramic Fiber Bulk Applications
                     </a>
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
-                <ScrollReveal  className="product-details lg:text-right lg:items-end" animation="fade-right" id="module-desc">
+                <ScrollReveal className="product-details lg:text-right lg:items-end" animation="fade-right" id="module-desc">
                     <h1>
                         Ceramic Fiber <br /> Module
                     </h1>
@@ -129,13 +139,13 @@ const ProductBlock = () => {
                         Learn More About Ceramic Fiber Module Features
                     </a>
                 </ScrollReveal>
-                <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover" 
+                <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     animation="fade-left" >
-                    <img 
-                        className="module-img" 
-                        loading="lazy" 
+                    <img
+                        className="module-img"
+                        loading="lazy"
                         src="/front-image/module_crop.png"
-                        alt="Ceramic Fiber Module" 
+                        alt="Ceramic Fiber Module"
                     />
                 </ScrollReveal>
             </div>
@@ -145,11 +155,11 @@ const ProductBlock = () => {
                     className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
-                    <img 
-                        className="module-img" 
-                        loading="lazy" 
-                        src="/front-image/paper_crop.png" 
-                        alt="Ceramic Fiber Paper" 
+                    <img
+                        className="module-img"
+                        loading="lazy"
+                        src="/front-image/paper_crop.png"
+                        alt="Ceramic Fiber Paper"
                     />
                 </ScrollReveal>
                 {/* Details Section */}
@@ -166,9 +176,9 @@ const ProductBlock = () => {
                         thermal properties, it is perfect for aerospace, automotive, and industrial
                         applications. Ensure efficiency and reliability with our advanced insulation solutions.
                     </p>
-                    <a 
-                        className="read-more-a" 
-                        href="/ceramic-fiber-paper" 
+                    <a
+                        className="read-more-a"
+                        href="/ceramic-fiber-paper"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

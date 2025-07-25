@@ -62,7 +62,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="logo-wrraper">
             <div className="logo">
-              <img src="/front-image/o-brand-logo.png" alt="Orient Ceramic Fibertech LLP" />
+                <img src="/front-image/o-brand-logo.png" alt="logo" loading="lazy" />
             </div>
             <div className="comapny-name">
               <img src="/front-image/o-text-logo.png" alt="Orient Ceramic Fibertech LLP" />
@@ -72,7 +72,7 @@ const Header = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6">
             <NavLink />
-            <LogInOut className='text-[var(--h-color)]'/>
+            <LogInOut className='text-[var(--h-color)]' />
             {/* <ThemeToggle /> */}
           </div>
 
@@ -100,7 +100,7 @@ const Header = () => {
           </div>
         </div>
       </Container>
-      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} blurValue={blurValue}/>
+      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} blurValue={blurValue} />
     </header>
   );
 };
