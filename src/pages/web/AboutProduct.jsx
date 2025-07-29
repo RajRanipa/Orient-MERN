@@ -163,7 +163,7 @@ const AboutProduct = () => {
                                 className={`opacity-40 group-hover:opacity-100 duration-500 touch-portrait:opacity-100 text-[1.8em] capitalize font-sangbleu`}>
                                 {"vision"}
                             </h1>
-                            <img
+                            <img loading="lazy" 
                                 src="/front-image/arrow.svg"
                                 alt="arrow"
                                 className="opacity-0 group-hover:opacity-100 translate-x-[-30px] duration-500 group-hover:translate-x-[0px] hover:transition-all hover:duration-500 touch-portrait:opacity-100 group-[.open]:touch-portrait:rotate-[-90deg] touch-portrait:rotate-[90deg] touch-portrait:scale-[0.7] touch-portrait:translate-x-[0px]" />
@@ -203,7 +203,7 @@ const AboutProduct = () => {
                                 className={`opacity-40 group-hover:opacity-100 duration-500 touch-portrait:opacity-100 text-[1.8em] capitalize font-sangbleu`}>
                                 {"mission"}
                             </h1>
-                            <img
+                            <img loading="lazy" 
                                 src="/front-image/arrow.svg"
                                 alt="arrow"
                                 className="opacity-0 group-hover:opacity-100 translate-x-[-30px] duration-500 group-hover:translate-x-[0px] hover:transition-all hover:duration-500 touch-portrait:opacity-100 group-[.open]:touch-portrait:rotate-[-90deg] touch-portrait:rotate-[90deg] touch-portrait:scale-[0.7] touch-portrait:translate-x-[0px]" />
@@ -241,7 +241,7 @@ const AboutProduct = () => {
                                 className={`opacity-40 group-hover:opacity-100 duration-500 touch-portrait:opacity-100 text-[1.8em] capitalize font-sangbleu`}>
                                 {"quality assurance"}
                             </h1>
-                            <img
+                            <img loading="lazy" 
                                 src="/front-image/arrow.svg"
                                 alt="arrow"
                                 className="opacity-0 group-hover:opacity-100 translate-x-[-30px] duration-500 group-hover:translate-x-[0px] hover:transition-all hover:duration-500 touch-portrait:opacity-100 group-[.open]:touch-portrait:rotate-[-90deg] touch-portrait:rotate-[90deg] touch-portrait:scale-[0.7] touch-portrait:translate-x-[0px]" />

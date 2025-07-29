@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Container from '../../components/Container';
-import About from './About';
+import { lazy, Suspense } from 'react';
+const About = lazy(() => import('./about'));
 import AboutProduct from './AboutProduct';
 import ScrollReveal from '../../components/ScrollReveal';
 
@@ -93,7 +94,8 @@ const Home = () => {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-0 object-[20%_50%] sm:object-center"
-          src="/front-image/home-bg-video.mp4"
+          src="/front-image/home/home-bg-video.mp4"
+          loading="lazy"
         />
 
         {/* === Overlay (optional, if video is too noisy) === */}
@@ -101,27 +103,30 @@ const Home = () => {
 
         {/* === Foreground Content === */}
         <Container className="relative z-20 flex flex-col items-center justify-center text-center h-[calc(100vh-72px)]">
-          <ScrollReveal className="flex flex-col items-center justify-center gap-4" id={"hero_text_div"}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white">
+          <div className="flex flex-col items-center justify-center gap-4" id={"hero_text_div"}>
+            <h1 className="text-4xl md:text-6xl text-white font-sangbleu">
               Ignite Your Performance
             </h1>
             <p className="mt-4 max-w-xl text-white text-opacity-90 text-lg">
               Discover ceramic fiber insulation reimagined for the modern industry.
             </p>
-          </ScrollReveal>
-          <button class="scroll-down-wrapper" id="scroll_to_Down" onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>
-            <div class="scroll-down">
-              <div class="text-wrapper">
+          </div>
+          <button className="scroll-down-wrapper" id="scroll_to_Down" onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>
+            <div className="scroll-down">
+              <div className="text-wrapper">
                 <p>scroll</p>
               </div>
-              <div class="text-wrapper">
+              <div className="text-wrapper">
                 <p>down</p>
               </div>
             </div>
           </button>
         </Container>
       </section>
-      <About />
+
+      <Suspense fallback={<div>Loading about section...</div>}>
+        <About />
+      </Suspense>
       <AboutProduct />
     </>
   );

@@ -13,10 +13,10 @@ const Certificate = () => {
                    
                     <div className="wrraper-div">
                         <div className="Certificates-flexDiv">
-                            <img className="certificate-img" src="./front-image/Certificate1.jpg" alt="certificate" />
-                            <img className="certificate-img" src="./front-image/Certificate2.jpg" alt="certificate" />
-                            <img className="certificate-img" src="./front-image/Certificate3.jpg" alt="certificate" />
-                            <img className="certificate-img" src="./front-image/Certificate4.jpg" alt="certificate" />
+                            <img loading="lazy" className="certificate-img" src="./front-image/Certificate1.jpg" alt="certificate" />
+                            <img loading="lazy" className="certificate-img" src="./front-image/Certificate2.jpg" alt="certificate" />
+                            <img loading="lazy" className="certificate-img" src="./front-image/Certificate3.jpg" alt="certificate" />
+                            <img loading="lazy" className="certificate-img" src="./front-image/Certificate4.jpg" alt="certificate" />
                         </div>
                     </div>
                 </div>

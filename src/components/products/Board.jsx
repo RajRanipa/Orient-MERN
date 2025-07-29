@@ -1,30 +1,24 @@
-import Container from '../../components/Container';
-import '../../pages/web/product.css'
-import ScrollReveal from '../ScrollReveal';
-import Atag from '../Atag';
-import { cn } from '../../utils/cn';
-
+import Container  from "../Container";
+import ScrollReveal from "../ScrollReveal";
+import Atag from "../Atag";
+import { cn } from "../../utils/cn";
+import ResponsiveImage from "../ResponsiveImage";
 
 const Board = () => {
-
     return (
         <>
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <ScrollReveal className="product-brief" id="product_brief">
-                            <p>Made from high-purity alumina-silicate fibers, Ceramic Fiber Boards are dense, rigid
-                                insulation materials ideal for high-temperature applications. They offer outstanding
-                                mechanical strength, thermal insulation, and resistance to chemical erosion and thermal
-                                shock. Applications include furnace linings, kiln insulation, and high-temperature
-                                gaskets, ensuring reliable performance in the harshest conditions.</p>
+                            <p>Made from high-purity alumina-silicate fibers, Ceramic Fiber Boards are dense, rigid insulation materials ideal for high-temperature applications. They offer outstanding mechanical strength, thermal insulation, and resistance to chemical erosion and thermal shock. Applications include furnace linings, kiln insulation, and high-temperature gaskets, ensuring reliable performance in the harshest conditions.</p>
                         </ScrollReveal>
                     </div>
                 </div>
                 {/* Text Content  */}
             </Container>
             <div className="strock-img">
-                <img src="/front-image/GadientStrock.svg" alt="" srcSet="" />
+                <img loading="lazy" src="/front-image/product/GadientStrock.svg" alt="" srcSet="" />
             </div>
             <div className="pro-details-section">
                 <Container >
@@ -72,7 +66,7 @@ const Board = () => {
                                 <div className="pro-sub-detail">
                                     <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Board.pdf" download>
                                         <span className="download-span">Download PDF</span>
-                                        <img className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                        <img loading="lazy"  className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -83,23 +77,23 @@ const Board = () => {
                                 <div className="pro-sub-detail">
                                     <div className="application-img items-center justify-center md:items-start md:justify-start">
                                         <div className="app-img">
-                                            <img src="/front-image/board_furnace_lining.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="board_furnace_lining" alt="furnace" />
                                             <p>Furnace Lining</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/board_small_furnace.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="board_small_furnace" alt="furnace" />
                                             <p>Small Furnace</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/high_temp_gasket.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="board_high_temp_gasket" alt="furnace" />
                                             <p>High-temperature gaskets</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/expansion_board_joint.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="board_expansion_joint" alt="furnace" />
                                             <p>Expansion Joints</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/chimny_board.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="board_chimny" alt="furnace" />
                                             <p>Flue and chimney linings</p>
                                         </div>
                                     </div>
@@ -122,7 +116,7 @@ const Board = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
 
                         </div>
@@ -139,7 +133,7 @@ const Board = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
                         </div>
                     </div>

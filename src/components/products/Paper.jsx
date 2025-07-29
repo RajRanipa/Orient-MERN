@@ -1,12 +1,10 @@
-import Container from '../../components/Container';
-import '../../pages/web/product.css'
-import ScrollReveal from '../ScrollReveal';
-import Atag from '../Atag';
-import { cn } from '../../utils/cn';
-
+import Container  from "../Container";
+import ScrollReveal from "../ScrollReveal";
+import Atag from "../Atag";
+import { cn } from "../../utils/cn";
+import ResponsiveImage from "../ResponsiveImage";
 
 const Paper = () => {
-
     return (
         <>
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
@@ -20,7 +18,7 @@ const Paper = () => {
                 {/* Text Content  */}
             </Container>
             <div className="strock-img">
-                <img src="/front-image/GadientStrock.svg" alt="" srcSet="" />
+                <img loading="lazy"  src="/front-image/product/GadientStrock.svg" alt="" srcSet="" />
             </div>
             <div className="pro-details-section">
                 <Container >
@@ -49,13 +47,13 @@ const Paper = () => {
                                     <p>1000 x 1000 x 3 <span className="unit-span">mm</span></p>
                                     <p>1000 x 500 x 2 <span className="unit-span">mm</span></p>
                                     <p>1000 x 1000 x 2 <span className="unit-span">mm</span></p>
-                                    
+
                                     <span className="note-span">customized size available*</span>
                                 </div>
                                 <div className="pro-sub-detail">
                                     <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Paper.pdf" download>
                                         <span className="download-span">Download PDF</span>
-                                        <img className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                        <img loading="lazy"  className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -66,24 +64,20 @@ const Paper = () => {
                                 <div className="pro-sub-detail">
                                     <div className="application-img items-center justify-center md:items-start md:justify-start">
                                         <div className="app-img">
-                                            <img src="/front-image/Gemini_funace_lining_2.jpg" alt="" />
-                                            <p>Furnace Lining</p>
-                                        </div>
-                                        <div className="app-img">
-                                            <img src="/front-image/Gemini_small_furnace.jpg" alt="" />
-                                            <p>Small Furnace</p>
-                                        </div>
-                                        <div className="app-img">
-                                            <img src="/front-image/Gemini_boiler.jpg" alt="" />
-                                            <p>Boiler Insulation</p>
-                                        </div>
-                                        <div className="app-img">
-                                            <img src="/front-image/Gemini_pipe.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="paper_2" alt="furnace" />
                                             <p>Pipe Insulation</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/Gemini_kilin.jpg" alt="" />
-                                            <p>kiln Insulation</p>
+                                            <ResponsiveImage folder="product" name="paper_funace_lining_1" alt="furnace" />
+                                            <p>Furnace Lining</p>
+                                        </div>
+                                        <div className="app-img">
+                                            <ResponsiveImage folder="product" name="Paper_funace_lining" alt="furnace" />
+                                            <p>wall insulation</p>
+                                        </div>
+                                        <div className="app-img">
+                                            <ResponsiveImage folder="product" name="Paper_Image" alt="furnace" />
+                                            <p>Boiler Insulation</p>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +99,7 @@ const Paper = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
 
                         </div>
@@ -122,7 +116,7 @@ const Paper = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
                         </div>
                     </div>

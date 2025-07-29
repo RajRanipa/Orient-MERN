@@ -1,10 +1,11 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
-import { FiCheck, FiMail, FiMap, FiMapPin, FiPhone, FiPhoneCall } from 'react-icons/fi';
+// import { FiCheck, FiMail, FiMap, FiPhoneCall } from 'react-icons/fi';
 import NavLinkCustom from './header/NavLinks';
 import Container from './Container';
 import Atag from './Atag';
 import { cn } from '../utils/cn';
+import ResponsiveImage from './ResponsiveImage';
 
 const Footer = () => {
   const [copiedItem, setCopiedItem] = useState('');
@@ -46,8 +47,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 text-sm md:grid-cols-[1fr_0.6fr_1.12fr]">
           <div className="flex flex-col items-center text-center md:text-left md:items-start p-2 ">
             <div className='flex gap-1 items-center md:items-start'>
-              <img src='./front-image/o-brand-logo.png' className='w-auto h-12' alt='logo' />
-              <img src='./front-image/o-text-logo.png' className='w-auto h-12' alt='logo' />
+              <ResponsiveImage folder='home' name='brand-logo'  alt="logo" className="w-auto h-12" />
+              <ResponsiveImage folder='home' name='text-logo' alt="logo" className="w-auto h-12" />
             </div>
             <p className="py-4 text-gray-300">Your go-to platform for awesome features. Built with 💻 and ☕.</p>
           </div>
@@ -63,7 +64,8 @@ const Footer = () => {
               <div className="flex flex-wrap items-center  gap-2 cursor-copy py-1"
                 onClick={() => copyToClipboard(phoneNumber, 'phone')}
               >
-                <FiPhoneCall className='min-w-3 min-h-3' />
+                {/* <FiPhoneCall className='min-w-3 min-h-3' /> */}
+                <img loading="lazy"src='/front-image/icon/phone_ring.svg' alt='mail' className='min-w-3 min-h-3 '  />
                 <div itemScope itemType="https://schema.org/Organization">
                   <div itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
                     <span itemProp="telephone">
@@ -76,14 +78,15 @@ const Footer = () => {
                 {copiedItem === 'phone' && (
                   <>
                     <p className="text-gray-400">Copied</p>
-                    <FiCheck className="text-green-500" />
+                    <svg className="text-green-500" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </>
                 )}
               </div>
               <div className="flex flex-wrap items-center gap-2 cursor-copy py-1"
                 onClick={() => copyToClipboard(gmailID, 'email')}
               >
-                <FiMail className='min-w-3 min-h-3' />
+                {/* <FiMail className='min-w-3 min-h-3' /> */}
+                <img loading="lazy"src='/front-image/icon/mail.svg' alt='mail' className='min-w-3 min-h-3' />
                 <div itemScope itemType="https://schema.org/Organization">
                   <div itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
                     <span itemProp="telephone">
@@ -96,14 +99,16 @@ const Footer = () => {
                 {copiedItem === 'email' && (
                   <>
                     <p className="text-gray-400">Copied</p>
-                    <FiCheck className="text-green-500" />
+                    {/* <FiCheck className="text-green-500" /> */}
+                    <svg className="text-green-500" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </>
                 )}
               </div>
               <div className="flex items-start gap-2 cursor-copy py-1 self-center w-full"
                 onClick={() => copyToClipboard(address, 'address')}
               >
-                <FiMap className='md:mt-[5px] min-w-3 min-h-3 flex-[0_0]' />
+                {/* <FiMap className='md:mt-[5px] min-w-3 min-h-3 flex-[0_0]' /> */}
+                <img loading="lazy"src='/front-image/icon/map.svg' alt='mail' className='md:mt-[5px] min-w-4 min-h-4 flex-[0_0]'  />
                 <div itemScope itemType="https://schema.org/Organization" className='lg:flex-[0_0_50%] md:flex-[0_0_60%]'>
                   <div itemProp="addressPoint" itemScope itemType="https://schema.org/addressPoint">
                     <span itemProp="address">
@@ -116,7 +121,8 @@ const Footer = () => {
                 {copiedItem === 'address' && (
                   <>
                     <p className="text-gray-400">Copied</p>
-                    <FiCheck className="text-green-500 mt-[2px] min-w-3 min-h-3 " />
+                    {/* <FiCheck className="text-green-500 mt-[2px] min-w-3 min-h-3 " /> */}
+                    <svg className="text-green-500 mt-[2px] min-w-3 min-h-3" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </>
                 )}
               </div>

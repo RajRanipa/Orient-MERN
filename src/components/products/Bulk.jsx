@@ -1,29 +1,25 @@
-import Container from '../../components/Container';
-import '../../pages/web/product.css'
-import ScrollReveal from '../ScrollReveal';
-import Atag from '../Atag';
-import { cn } from '../../utils/cn';
+import Container  from "../Container";
+import ScrollReveal from "../ScrollReveal";
+import Atag from "../Atag";
+import { cn } from "../../utils/cn";
+import ResponsiveImage from "../ResponsiveImage";
 
 
 const Bulk = () => {
-
     return (
         <>
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <ScrollReveal className="product-brief" id="product_brief">
-                            <p>Composed of high-purity aluminosilicate fibers, Ceramic Fiber Bulk is a raw material used
-                                for creating blankets, boards, and paper. With exceptional thermal resistance, low
-                                thermal conductivity, and thermal shock resistance, it serves as a crucial component in
-                                industries requiring high-performance heat management solutions.</p>
+                            <p>Composed of high-purity aluminosilicate fibers, Ceramic Fiber Bulk is a raw material used for creating blankets, boards, and paper. With exceptional thermal resistance, low thermal conductivity, and thermal shock resistance, it serves as a crucial component in industries requiring high-performance heat management solutions.</p>
                         </ScrollReveal>
                     </div>
                 </div>
                 {/* Text Content  */}
             </Container>
             <div className="strock-img">
-                <img src="/front-image/GadientStrock.svg" alt="" srcSet="" />
+                <img loading="lazy"  src="/front-image/product/GadientStrock.svg" alt="" srcSet="" />
             </div>
             <div className="pro-details-section">
                 <Container >
@@ -50,7 +46,7 @@ const Bulk = () => {
                                 <div className="pro-sub-detail">
                                     <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Bulk.pdf" download>
                                         <span className="download-span">Download PDF</span>
-                                        <img className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                        <img loading="lazy"  className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -61,23 +57,23 @@ const Bulk = () => {
                                 <div className="pro-sub-detail">
                                     <div className="application-img items-center justify-center md:items-start md:justify-start">
                                         <div className="app-img">
-                                            <img src="/front-image/bulk_furnace.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="bulk_furnace" alt="furnace" />
                                             <p>Furnace insulation</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/bulk_duck.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="bulk_duck" alt="furnace" />
                                             <p>Pipe and duct wrap</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/bulk_automotive.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="bulk_automotive" alt="furnace" />
                                             <p>Automotive heat shields</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/bulk_textile.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="bulk_textile" alt="furnace" />
                                             <p>ceramic fiber textile industries</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/bulk_ceramic_fiber_product.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="bulk_ceramic_fiber_product" alt="furnace" />
                                             <p>ceramic fiber product</p>
                                         </div>
                                     </div>
@@ -100,7 +96,7 @@ const Bulk = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
 
                         </div>
@@ -117,7 +113,7 @@ const Bulk = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
                         </div>
                     </div>

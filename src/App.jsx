@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { AuthProvider } from './context/AuthContext';
-import MasterRoute from './routes/MasterRoutes';
-import { ToastContainer } from 'react-toastify';
+import WebRoutes from './routes/WebRoutes';
+// import { ToastContainer } from 'react-toastify';
 import { ScrollObserverProvider } from './context/ScrollObserverContext';
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
@@ -18,11 +18,11 @@ const App = () => {
           <ThemeProvider>
             <AuthProvider>
               <BrowserRouter>
-                <MasterRoute />
+                <WebRoutes/>
               </BrowserRouter>
             </AuthProvider>
           </ThemeProvider>
-          <ToastContainer />
+          
         </ScrollObserverProvider>
       </React.StrictMode>
     </>

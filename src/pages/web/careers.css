@@ -1,6 +1,5 @@
 /* * * * * * * * * * * * * career page design * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-
 .career-section::before {
     content: '';
     width: 100%;
@@ -9,7 +8,6 @@
     position: absolute;
     background: rgb(245 245 245);
     background-size: 200% 200%;
-    /* background-position: calc(var(--padding-top)); */
     z-index: 5;
     top: calc(0px - var(--padding-top));
 }
@@ -21,7 +19,7 @@
     width: 100vw;
     height: calc(100% + var(--padding-top));
     position: absolute;
-    background: url(/front-image/careerbg1.jpg);
+    background: url(/front-image/careerbg1.png);
     background-size: cover;
     background-position: center;
     z-index: 5;
@@ -70,7 +68,6 @@
     max-width: 100%;
     z-index: 9;
 }
-
 
 .flex-50-child {
     flex: 0 0 50%;

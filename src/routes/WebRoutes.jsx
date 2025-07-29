@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/web/Home';
 import Products from '../pages/web/Products';
@@ -14,7 +13,6 @@ import Bulk from '../components/products/Bulk';
 import Module from '../components/products/Module';
 import Paper from '../components/products/Paper';
 import Blanket from '../components/products/Blanket';
-import { ScrollObserverProvider } from '../context/ScrollObserverContext';
 import Certificate from '../components/Certificate';
 
 const WebRoutes = () => {

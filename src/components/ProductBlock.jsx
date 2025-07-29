@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal'; // if you're using a global scroll observer
 import '../pages/web/home.css';
+import ResponsiveImage from './ResponsiveImage';
 
 const ProductBlock = () => {
     return (
@@ -11,22 +12,7 @@ const ProductBlock = () => {
                     className="relative flex-1 max-w-[80%] w-full sm:max-w-[90%] lg:max-w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
-                    {/* <img
-                        src="/front-image/blanket_crop.png"
-                        alt="High-Temperature Ceramic Fiber Blanket"
-                        loading="lazy"
-                        className="blanket-img"
-                    /> */}
-                    <img
-                        src="/front-image/blanket_crop_small.png"
-                        srcSet="
-                            /front-image/blanket_crop_small.png 600w,
-                            /front-image/blanket_crop.png 1920w"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        alt="High-Temperature Ceramic Fiber Blanket"
-                        loading="lazy"
-                        className="blanket-img"
-                    />
+                <ResponsiveImage folder='home' name="blanket_crop" alt="High-Temperature Ceramic Fiber Blanket" className="blanket-img" />
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal animation="fade-left" className="product-details" id="blanket-desc">
@@ -80,7 +66,7 @@ const ProductBlock = () => {
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal animation='fade-left' id="board-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover">
-                    <img className="board-img" loading="lazy" src="/front-image/board_crop.png" alt="Ceramic Fiber Board" />
+                    <ResponsiveImage folder='home' name="board_crop" alt="Ceramic Fiber Board" className="board-img" />
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
@@ -89,7 +75,7 @@ const ProductBlock = () => {
                     className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
-                    <img className="bulk-img" loading="lazy" src="/front-image/bulk_crop.png" alt="Ceramic Fiber Bulk" />
+                    <ResponsiveImage folder='home' name="bulk_crop" alt="Ceramic Fiber Bulk" className="bulk-img" />
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal className="product-details" animation="fade-left" id="bulk-desc">
@@ -141,12 +127,7 @@ const ProductBlock = () => {
                 </ScrollReveal>
                 <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     animation="fade-left" >
-                    <img
-                        className="module-img"
-                        loading="lazy"
-                        src="/front-image/module_crop.png"
-                        alt="Ceramic Fiber Module"
-                    />
+                    <ResponsiveImage folder='home' name="module_crop" alt="Ceramic Fiber Module" className="module-img" />
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
@@ -155,12 +136,7 @@ const ProductBlock = () => {
                     className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
-                    <img
-                        className="module-img"
-                        loading="lazy"
-                        src="/front-image/paper_crop.png"
-                        alt="Ceramic Fiber Paper"
-                    />
+                    <ResponsiveImage folder='home' name="paper_crop" alt="Ceramic Fiber Paper" className="paper-img" />
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal className="product-details" id="paper-decs">

@@ -73,7 +73,7 @@
 
 // src/context/ThemeContext.js
 
-import React, { createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 // 1. Define the shape of the context data for better autocompletion and clarity
 const initialContextState = {

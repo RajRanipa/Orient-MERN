@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Layout from '../../components/Layout';
 import TextInput from '../../components/form/TextInput';
 import SubmitButton from '../../components/form/SubmitButton';

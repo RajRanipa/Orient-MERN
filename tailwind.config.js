@@ -97,7 +97,7 @@ export default {
         slideUp: 'slideUp 0.4s ease-out forwards',
       },
       fontFamily: {
-        sangbleu: ['SangbleuOGSans', 'sans-serif'], // now you can use font-sangbleu
+        sangbleu: ['Sangbleuogserif', 'Times New Roman', 'serif'], // now you can use font-sangbleu
         montser: ['Montserrat', 'sans-serif'], // now you can use font-sangbleu
       },
     },

@@ -1,4 +1,5 @@
 import Container from '../../components/Container';
+import ResponsiveImage from '../../components/ResponsiveImage';
 import ScrollReveal from '../../components/ScrollReveal';
 import './home.css';
 import { NavLink } from 'react-router-dom';
@@ -7,11 +8,7 @@ const About = () => (
   <section className="w-full bg-ui-bg-medium py-16 relative" id='about_us'>
     {/* Visual / Image */}
     <div className="flex-1 w-full absolute top-0 left-0 z-0 opacity-50 overflow-visible ">
-      <img
-        src="/front-image/orient vector bg.svg"
-        alt="About Orient Fibertech"
-        className="w-full h-[200vh] object-[0%_0%] object-cover "
-      />
+      <ResponsiveImage folder='home' name="orient_vector" alt="About Orient Fibertech" className="w-full h-[200vh] object-[0%_0%] object-cover " />
     </div>
     <Container className="flex flex-col lg:flex-row items-center gap-12 z-10 relative" padding="true">
 
@@ -33,7 +30,7 @@ const About = () => (
             <div className="tile" id="tile1">
               <div className="sine" id="sine1"></div>
               <div className="icon-svg">
-                <img src="/front-image/shield_arrow1.png" alt="" />
+              <ResponsiveImage folder='home' name="shield_arrow1" alt="About Orient Fibertech" className="pointer-event-none" />
                 <div className="title">
                   <h3 className="childe-title">15+ years of excellence in thermal insulation
                     solutions.</h3>
@@ -45,7 +42,7 @@ const About = () => (
             <div className="tile" id="tile2">
               <div className="sine" id="sine2"></div>
               <div className="icon-svg">
-                <img src="/front-image/gears2.png" alt="" />
+                <ResponsiveImage folder='home' name="gears2" alt="About Orient Fibertech" className="pointer-event-none" />
                 <div className="title">
                   <h3 className="childe-title">Custom-tailored solutions for diverse industries.</h3>
                 </div>
@@ -56,7 +53,7 @@ const About = () => (
             <div className="tile" id="tile3">
               <div className="sine" id="sine3"></div>
               <div className="icon-svg">
-                <img className="pointer-event-none" src="/front-image/isologo.png" alt="" />
+                <ResponsiveImage folder='home' name="isologo" alt="About Orient Fibertech" className="pointer-event-none" />
                 <div className="title">
                   <h3 className="childe-title">ISO-certified, internationally recognized standards.
                   </h3>

@@ -1,7 +1,6 @@
 import React from 'react';
 // import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { FiLogIn, FiLogOut } from 'react-icons/fi'; // optional icon pack
 import { useAuth } from '../context/AuthContext';
 
 const LogInOut = ({ variant = 'header', className = '' }) => {
@@ -27,7 +26,8 @@ const LogInOut = ({ variant = 'header', className = '' }) => {
       className={`${combinedStyle} flex items-center gap-2 px-4 py-2 rounded-md bor `}
       aria-label="Log out"
     >
-      <FiLogOut className="text-lg" />
+      {/* <FiLogOut className="text-lg" /> */}
+      <img loading="lazy"src="/public/front-image/icon/logout.svg" alt="logo"/>
       <span>Log out</span>
     </button>
   ) : (
@@ -36,8 +36,9 @@ const LogInOut = ({ variant = 'header', className = '' }) => {
       className={`${combinedStyle} flex items-center gap-2 px-4 py-2 rounded-md`}
       aria-label="Log in"
     >
-      <FiLogIn className="text-lg" />
-      <span>Log in</span>
+      {/* <FiLogIn className="text-lg" /> */}
+      <img loading="lazy"src="/front-image/icon/login.svg" alt="logo"/>
+      <span>Log in</span>      
     </button>
   );
 };

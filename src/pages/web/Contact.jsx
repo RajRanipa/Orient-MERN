@@ -40,7 +40,7 @@ const Contact = () => {
         <ScrollReveal className="enquiry-QR-wrapper flex-50-child" id="enquiry_qr_div" animation='fade-right'>
           <div className="enquiry-QR-div">
             <p>for quick support <br /> on whatsapp</p>
-            <img src="/front-image/qr-code.svg" alt="" />
+            <img loading="lazy"  src="/front-image/qr-code.png" alt="" />
             <p>scan qr code</p>
           </div>
         </ScrollReveal>

@@ -1,12 +1,10 @@
-import Container from '../../components/Container';
-import '../../pages/web/product.css'
-import ScrollReveal from '../ScrollReveal';
-import Atag from '../Atag';
-import { cn } from '../../utils/cn';
-
+import Container  from "../Container";
+import ScrollReveal from "../ScrollReveal";
+import Atag from "../Atag";
+import { cn } from "../../utils/cn";
+import ResponsiveImage from "../ResponsiveImage";
 
 const Module = () => {
-
     return (
         <>
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
@@ -20,7 +18,7 @@ const Module = () => {
                 {/* Text Content  */}
             </Container>
             <div className="strock-img">
-                <img src="/front-image/GadientStrock.svg" alt="" srcSet="" />
+                <img loading="lazy"  src="/front-image/product/GadientStrock.svg" alt="" srcSet="" />
             </div>
             <div className="pro-details-section">
                 <Container >
@@ -61,7 +59,7 @@ const Module = () => {
                                 <div className="pro-sub-detail">
                                     <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Module.pdf" download>
                                         <span className="download-span">Download PDF</span>
-                                        <img className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                        <img loading="lazy"  className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -72,19 +70,19 @@ const Module = () => {
                                 <div className="pro-sub-detail">
                                     <div className="application-img items-center justify-center md:items-start md:justify-start">
                                         <div className="app-img">
-                                            <img src="/front-image/module_power_plant.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="module_power_plant" alt="furnace" />
                                             <p>power plant</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/module_funace_lining_1.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="module_small_furnace" alt="furnace" />
                                             <p>Furnace Lining</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/module_kilin.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="module_kilin" alt="furnace" />
                                             <p>high-temperature kiln</p>
                                         </div>
                                         <div className="app-img">
-                                            <img src="/front-image/module_shuttle_kiln.jpg" alt="" />
+                                            <ResponsiveImage folder="product" name="module_shuttle_kiln" alt="furnace" />
                                             <p>Shuttle kiln</p>
                                         </div>
                                     </div>
@@ -107,7 +105,7 @@ const Module = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
 
                         </div>
@@ -124,7 +122,7 @@ const Module = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
                             </div>
                         </div>
                     </div>
