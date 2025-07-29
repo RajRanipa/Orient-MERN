@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Container from '../../components/Container';
 import { lazy, Suspense } from 'react';
-const About = lazy(() => import('./about'));
+const About = lazy(() => import('./About'));
 import AboutProduct from './AboutProduct';
 import ScrollReveal from '../../components/ScrollReveal';
 
