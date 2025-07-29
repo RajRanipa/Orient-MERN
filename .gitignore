@@ -14,7 +14,9 @@ dist-ssr
 README.md
 readme.txt
 new.txt
+optimize.text
 .txt
+bundle-report.html
 
 # Editor directories and files
 .vscode/*
