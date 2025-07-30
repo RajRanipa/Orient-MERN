@@ -88,12 +88,12 @@ const Home = () => {
     <>
       <section className="relative min-h-screen pt-[var(--padding-top)]" id='hero_home'>
         {/* === Background Video === */}
-        <video aria-hidden="true" className="absolute inset-0 w-full h-full object-cover z-0 object-[20%_50%] sm:object-center" autoPlay loop muted playsInline >
+        <video aria-hidden="true" className="absolute inset-0 w-full h-full object-cover z-[5] object-[20%_50%] sm:object-center" autoPlay loop muted playsInline >
           <source src="/front-image/home/home-bg-video.mp4" type="video/mp4" />
         </video>
-
+        <img src="/front-image/home/home-bg-video.jpeg" className="absolute inset-0 w-full h-full object-cover z-[1] object-[20%_50%] sm:object-center"/>
         {/* === Overlay (optional, if video is too noisy) === */}
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm z-10"></div>
+        <div className="absolute inset-0 bg-black/30 z-[10]"></div>
 
         {/* === Foreground Content === */}
         <Container className="relative z-20 flex flex-col items-center justify-center text-center h-[calc(100vh-72px)]">
