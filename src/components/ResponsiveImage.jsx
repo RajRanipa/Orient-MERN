@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { cn } from '../utils/cn';
 
 const ResponsiveImage = ({
   name,        // base image name (without -600/-1200/-1800)
@@ -9,10 +10,8 @@ const ResponsiveImage = ({
   alt = '',
   className = '',
   loading = 'lazy',
-  // sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 60vw',
-  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 33vw",
   folder = 'home', // customize if your images live elsewhere
-  width = "auto", height = "auto",
 }) => {
   return (
     <img
@@ -25,9 +24,7 @@ const ResponsiveImage = ({
       sizes={sizes}
       alt={alt}
       loading={loading}
-      className={className}
-      height={height}
-      width={width}
+      className={cn('w-full h-auto',className)}
     />
   );
 };
