@@ -24,7 +24,7 @@ const ResponsiveImage = ({
       sizes={sizes}
       alt={alt}
       loading={loading}
-      className={cn('w-full h-auto',className)}
+      className={cn(className)}
     />
   );
 };
