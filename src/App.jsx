@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { AuthProvider } from './context/AuthContext';
 import WebRoutes from './routes/WebRoutes';
-import { HelmetProvider } from 'react-helmet';
+// import { HelmetProvider } from 'react-helmet';
 import { ScrollObserverProvider } from './context/ScrollObserverContext';
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
       <React.StrictMode>
-        <HelmetProvider>
+        {/* <HelmetProvider> */}
           <ScrollObserverProvider>
             <ThemeProvider>
               <AuthProvider>
@@ -24,7 +24,7 @@ const App = () => {
               </AuthProvider>
             </ThemeProvider>
           </ScrollObserverProvider>
-        </HelmetProvider>
+        {/* </HelmetProvider> */}
       </React.StrictMode>
     </>
   );
