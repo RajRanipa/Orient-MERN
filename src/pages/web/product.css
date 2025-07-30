@@ -1,12 +1,3 @@
-:root {
-    --cl-dark: rgb(15 28 54);
-    --cl-white: rgb(245 245 245);
-    --scale-size: 1.12;
-    --svg-height: 120px;
-    --svg-width: 120px;
-    --scale-size: 1.12;
-}
-
 @media (max-width: 390px) {
     :root{
         --svg-height: 120px;

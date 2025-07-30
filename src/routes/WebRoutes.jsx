@@ -23,16 +23,21 @@ const WebRoutes = () => {
       <Route element={<WebLayout />}>
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         {/* <Route path="/products" element={<PageTransition><Products /></PageTransition>} /> */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Route path="/products/*" element={<Products />}>
-            <Route index element={<PageTransition><Blanket /></PageTransition>} />
-            <Route path="ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
-            <Route path="ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
-            <Route path="ceramic-fiber-bulk" element={<PageTransition><Bulk /></PageTransition>} />
-            <Route path="ceramic-fiber-module" element={<PageTransition><Module /></PageTransition>} />
-            <Route path="ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} />
-          </Route>
-        </Suspense>
+        <Route
+          path="/products/*"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Products />
+            </Suspense>
+          }
+        >
+          <Route index element={<PageTransition><Blanket /></PageTransition>} />
+          <Route path="ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
+          <Route path="ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
+          <Route path="ceramic-fiber-bulk" element={<PageTransition><Bulk /></PageTransition>} />
+          <Route path="ceramic-fiber-module" element={<PageTransition><Module /></PageTransition>} />
+          <Route path="ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} />
+        </Route>
         <Route path="/career" element={<PageTransition><Careers /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/certificates" element={<PageTransition><Certificate /></PageTransition>} />

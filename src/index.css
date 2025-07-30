@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: 'Sangbleuogserif';
   src: url('/fonts/SangBleuOGSerif-Light.woff2') format('woff2');
@@ -8,6 +9,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Sangbleuogsans';
   src: url('/fonts/SangBleuOGSans-Light.woff2') format('woff2');
@@ -98,6 +100,12 @@ body {
   --cl-blue-logo: rgb(32 92 169);
   --cl-sky-logo: rgb(2 175 239);
   --logo-wrraper-height: 50px;
+  --cl-dark: rgb(15 28 54);
+  --cl-white: rgb(245 245 245);
+  --scale-size: 1.12;
+  --svg-height: 120px;
+  --svg-width: 120px;
+  --scale-size: 1.12;
 }
 
 .dark {
