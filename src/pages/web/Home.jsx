@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Container from '../../components/Container';
 import { lazy, Suspense } from 'react';
 const About = lazy(() => import('./About'));
 import AboutProduct from './AboutProduct';
-import ScrollReveal from '../../components/ScrollReveal';
 
 const Home = () => {
+  const [videoReady, setVideoReady] = useState(false);
   const useHeaderColor = () => {
     useEffect(() => {
       console.log(location.pathname)
@@ -88,10 +88,39 @@ const Home = () => {
     <>
       <section className="relative min-h-screen pt-[var(--padding-top)]" id='hero_home'>
         {/* === Background Video === */}
-        <video aria-hidden="true" className="absolute inset-0 w-full h-full object-cover z-[5] object-[20%_50%] sm:object-center" autoPlay loop muted playsInline >
+        {/* <video aria-hidden="true" className="absolute inset-0 w-full h-full object-cover z-[5] object-[20%_50%] sm:object-center" 
+          autoPlay loop muted playsInline 
+          alt="Video placeholder"
+          onCanPlayThrough={() => setVideoReady(true)} // or use onPlaying
+        >
           <source src="/front-image/home/home-bg-video.mp4" type="video/mp4" />
         </video>
-        <img src="/front-image/home/home-bg-video.jpeg" className="absolute inset-0 w-full h-full object-cover z-[1] object-[20%_50%] sm:object-center"/>
+        <img src="/front-image/home/home-bg-video.jpeg" 
+          // className="absolute inset-0 w-full h-full object-cover z-[1] object-[20%_50%] sm:object-center"
+          className={`absolute inset-0 w-full h-full object-cover z-[1] object-[20%_50%] sm:object-center transition-opacity duration-500 ${
+            videoReady ? 'opacity-0' : 'opacity-100'
+          }`}
+        /> */}
+        <video
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover z-[5] object-[20%_50%] sm:object-center"
+        autoPlay
+        loop
+        muted
+        playsInline
+        onCanPlayThrough={() => setVideoReady(true)} // or use onPlaying
+      >
+        <source src="/front-image/home/home-bg-video.mp4" type="video/mp4" />
+      </video>
+
+      {/* === Poster image (hidden after video is ready) === */}
+      {!videoReady && (
+        <img
+          src="/front-image/home/home-bg-video.jpeg"
+          alt="Video placeholder"
+          className="absolute inset-0 w-full h-full object-cover z-[1] object-[20%_50%] sm:object-center transition-opacity duration-500"
+        />
+      )}
         {/* === Overlay (optional, if video is too noisy) === */}
         <div className="absolute inset-0 bg-black/30 z-[10]"></div>
 
