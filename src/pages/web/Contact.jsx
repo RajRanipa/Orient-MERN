@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'; // optional icon pac
 import Container from '../../components/Container';
 import './contact.css';
 import ScrollReveal from '../../components/ScrollReveal';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   useEffect(() => {

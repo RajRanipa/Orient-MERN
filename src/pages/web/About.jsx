@@ -3,7 +3,7 @@ import ResponsiveImage from '../../components/ResponsiveImage';
 import ScrollReveal from '../../components/ScrollReveal';
 import './home.css';
 import { NavLink } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const About = () => (
   <>

@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { AuthProvider } from './context/AuthContext';
 import WebRoutes from './routes/WebRoutes';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet';
 import { ScrollObserverProvider } from './context/ScrollObserverContext';
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
