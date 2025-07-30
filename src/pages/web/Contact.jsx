@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'; // optional icon pack
+import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 import Container from '../../components/Container';
 import './contact.css';
 import ScrollReveal from '../../components/ScrollReveal';
