@@ -9,12 +9,14 @@ const ResponsiveImage = ({
   alt = '',
   className = '',
   loading = 'lazy',
-  sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 60vw',
+  // sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 60vw',
+  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
   folder = 'home', // customize if your images live elsewhere
+  width = "auto", height = "auto",
 }) => {
   return (
     <img
-      src={`/front-image/${folder}/${name}_1200.${ext}`}
+      src={`/front-image/${folder}/${name}_600.${ext}`}
       srcSet={`
         /front-image/${folder}/${name}_600.${ext} 600w,
         /front-image/${folder}/${name}_1200.${ext} 1200w,
@@ -24,6 +26,8 @@ const ResponsiveImage = ({
       alt={alt}
       loading={loading}
       className={className}
+      height={height}
+      width={width}
     />
   );
 };

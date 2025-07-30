@@ -31,13 +31,13 @@ const Footer = () => {
   return (
     <footer className="w-full text-text border-t border-border py-8 z-20 bg-[var(--cl-dark)]">
       <Container >
-        <div className="mb-8 text-center text-xs text-gray-500">
+        <div className="mb-8 text-center text-xs text-gray-400">
           <Atag
             key={"back to top"}
             linkname={"back to top".toLowerCase()}
             href={"#top"}
             onClick={scrollToTop}
-            id={"navlink_"+"back to top".toLowerCase()}
+            id={"navlink_" + "back to top".toLowerCase()}
             className={cn(
               'transition duration-200',
             )}
@@ -47,29 +47,29 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 text-sm md:grid-cols-[1fr_0.6fr_1.12fr]">
           <div className="flex flex-col items-center text-center md:text-left md:items-start p-2 ">
             <div className='flex gap-1 items-center md:items-start'>
-              <ResponsiveImage folder='home' name='brand-logo'  alt="logo" className="w-auto h-12" />
+              <ResponsiveImage folder='home' name='brand-logo' alt="logo" className="w-auto h-12" />
               <ResponsiveImage folder='home' name='text-logo' alt="logo" className="w-auto h-12" />
             </div>
             <p className="py-4 text-gray-300">Your go-to platform for awesome features. Built with 💻 and ☕.</p>
           </div>
           <div className="flex flex-col items-center text-center md:text-left md:items-start p-2">
-            <h4 className="text-lg font-semibold mb-3 text-gray-100">Quick Links</h4>
+            <h2 className="text-lg font-semibold mb-3 text-gray-100">Quick Links</h2>
             <ul className="pt-2 flex flex-wrap gap-4 md:flex-col ">
               <NavLinkCustom variant="footer" className="block text-gray-300" />
             </ul>
           </div>
           <div className="flex flex-col items-center text-center md:text-left md:items-start p-2">
-            <h4 className="text-lg font-semibold mb-3 text-gray-100">Contact Us</h4>
+            <h2 className="text-lg font-semibold mb-3 text-gray-100">Contact Us</h2>
             <div className="flex flex-col gap-2 text-gray-300 items-center md:items-start">
               <div className="flex flex-wrap items-center  gap-2 cursor-copy py-1"
                 onClick={() => copyToClipboard(phoneNumber, 'phone')}
               >
                 {/* <FiPhoneCall className='min-w-3 min-h-3' /> */}
-                <img loading="lazy"src='/front-image/icon/phone_ring.svg' alt='mail' className='min-w-3 min-h-3 '  />
+                <img loading="lazy" src='/front-image/icon/phone_ring.svg' alt='mail' className='min-w-3 min-h-3 invert-[1]' />
                 <div itemScope itemType="https://schema.org/Organization">
                   <div itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
                     <span itemProp="telephone">
-                      <a className="hover:underline">
+                      <a href={`tel:${phoneNumber}`} className="hover:underline">
                         {phoneNumber}
                       </a>
                     </span>
@@ -86,11 +86,11 @@ const Footer = () => {
                 onClick={() => copyToClipboard(gmailID, 'email')}
               >
                 {/* <FiMail className='min-w-3 min-h-3' /> */}
-                <img loading="lazy"src='/front-image/icon/mail.svg' alt='mail' className='min-w-3 min-h-3' />
+                <img loading="lazy" src='/front-image/icon/mail.svg' alt='mail' className='min-w-3 min-h-3  invert-[1]' />
                 <div itemScope itemType="https://schema.org/Organization">
                   <div itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
-                    <span itemProp="telephone">
-                      <a className=" hover:underline">
+                    <span itemProp="email">
+                      <a href={`mailto:${gmailID}`} className="hover:underline">
                         {gmailID}
                       </a>
                     </span>
@@ -108,11 +108,11 @@ const Footer = () => {
                 onClick={() => copyToClipboard(address, 'address')}
               >
                 {/* <FiMap className='md:mt-[5px] min-w-3 min-h-3 flex-[0_0]' /> */}
-                <img loading="lazy"src='/front-image/icon/map.svg' alt='mail' className='md:mt-[5px] min-w-4 min-h-4 flex-[0_0]'  />
+                <img loading="lazy" src='/front-image/icon/map.svg' alt='mail' className='md:mt-[5px] min-w-3 min-h-3 invert-[1]' />
                 <div itemScope itemType="https://schema.org/Organization" className='lg:flex-[0_0_50%] md:flex-[0_0_60%]'>
                   <div itemProp="addressPoint" itemScope itemType="https://schema.org/addressPoint">
                     <span itemProp="address">
-                      <a className=" hover:underline w-full">
+                      <a href="https://maps.app.goo.gl/4RLM1eWvzkdxZeCf8" target="_blank" rel="noopener noreferrer" className=" hover:underline w-full">
                         {address}
                       </a>
                     </span>
@@ -130,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 text-center text-xs text-text text-gray-500">
+        <div className="mt-8 text-center text-xs text-text text-gray-400">
           © {new Date().getFullYear()} MyApp. All rights reserved.
         </div>
       </Container>

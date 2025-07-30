@@ -10,9 +10,9 @@ const Module = () => {
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
-                        <ScrollReveal className="product-brief" id="product_brief">
+                        <div className="product-brief" id="product_brief">
                             <p>Crafted from folded and compressed ceramic fiber blankets, Ceramic Fiber Modules are designed for use in extreme-temperature environments. Equipped with pre-installed anchoring systems, they offer enhanced thermal insulation, reduce installation time, and boost energy efficiency in furnaces, kilns, and industrial equipment.</p>
-                        </ScrollReveal>
+                        </div>
                     </div>
                 </div>
                 {/* Text Content  */}
@@ -34,25 +34,25 @@ const Module = () => {
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
-                                    <h6>density range</h6>
+                                    <h2>density range</h2>
                                     <p>128 -  160 - 190 kg/m3</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>temperature range</h6>
+                                    <h2>temperature range</h2>
                                     <p>1260 - 1425 °C</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>size</h6>
+                                    <h2>size</h2>
                                     <p>305 x 305 x 305 <span className="unit-span">mm</span></p>
                                     <span className="note-span">customized size available*</span>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>module type</h6>
+                                    <h2>module type</h2>
                                     <p>folded module</p>
                                     <p>anchor module</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>anchor type</h6>
+                                    <h2>anchor type</h2>
                                     <p>cerlock anchor</p>
                                     <span className="note-span">customized anchor available*</span>
                                 </div>

@@ -10,9 +10,9 @@ const Board = () => {
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
-                        <ScrollReveal className="product-brief" id="product_brief">
+                        <div className="product-brief" id="product_brief">
                             <p>Made from high-purity alumina-silicate fibers, Ceramic Fiber Boards are dense, rigid insulation materials ideal for high-temperature applications. They offer outstanding mechanical strength, thermal insulation, and resistance to chemical erosion and thermal shock. Applications include furnace linings, kiln insulation, and high-temperature gaskets, ensuring reliable performance in the harshest conditions.</p>
-                        </ScrollReveal>
+                        </div>
                     </div>
                 </div>
                 {/* Text Content  */}
@@ -34,15 +34,15 @@ const Board = () => {
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
-                                    <h6>density range</h6>
+                                    <h2>density range</h2>
                                     <p>reg. <br />high-density</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>temperature range</h6>
+                                    <h2>temperature range</h2>
                                     <p>1100 - 1260 - 1425 °C</p>
                                 </div>
                                 <div className="pro-sub-detail flex">
-                                    <h6>size</h6>
+                                    <h2>size</h2>
                                     <p>1000 x 500 x 25 <span className="unit-span">mm</span></p>
                                     <p>1000 x 500 x 50 <span className="unit-span">mm</span></p>
                                     <p>1000 x 500 x 12 <span className="unit-span">mm</span></p>

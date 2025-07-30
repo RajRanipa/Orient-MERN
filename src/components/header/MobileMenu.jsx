@@ -45,9 +45,9 @@ const MobileMenu = ({ isOpen, onClose, style }) => {
           isOpen ? 'animate-slide-from-right' : 'animate-slide-to-right'
         )}
       >
-        <div className="flex flex-col space-y-4 relative">
+        <ul className="flex flex-col space-y-4 relative">
           <NavLinkCustom className="block text-base" onClick={onClose} />
-        </div>
+        </ul>
       </div>
     )
   );

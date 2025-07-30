@@ -16,10 +16,10 @@ const NavLinkCustom = ({
   variant = 'header',
   className = '',
   icon = null,
-  onClick = () => {},
+  onClick = () => { },
 }) => {
   const location = useLocation();
-  
+
 
   const baseStyles = 'transition duration-200';
   const variantStyles = {
@@ -35,21 +35,22 @@ const NavLinkCustom = ({
         const isActive = location.pathname === href;
 
         return (
-          <Atag
-            key={name}
-            linkname={name.toLowerCase()}
-            href={href}
-            onClick={onClick}
-            id={"navlink_"+name.toLowerCase()}
-            className={cn(
-              baseStyles,
-              variantStyles[variant],
-              isActive && 'font-semibold',
-              className
-            )}
-          >
-            {icon && <span className="mr-1">{icon}</span>}
-          </Atag>
+          <li key={name}>
+            <Atag
+              linkname={name.toLowerCase()}
+              href={href}
+              onClick={onClick}
+              id={"navlink_" + name.toLowerCase()}
+              className={cn(
+                baseStyles,
+                variantStyles[variant],
+                isActive && 'font-semibold',
+                className
+              )}
+            >
+              {icon && <span className="mr-1">{icon}</span>}
+            </Atag>
+          </li>
         );
       })}
     </>

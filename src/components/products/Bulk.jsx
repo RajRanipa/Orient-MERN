@@ -11,9 +11,9 @@ const Bulk = () => {
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
-                        <ScrollReveal className="product-brief" id="product_brief">
+                        <div className="product-brief" id="product_brief">
                             <p>Composed of high-purity aluminosilicate fibers, Ceramic Fiber Bulk is a raw material used for creating blankets, boards, and paper. With exceptional thermal resistance, low thermal conductivity, and thermal shock resistance, it serves as a crucial component in industries requiring high-performance heat management solutions.</p>
-                        </ScrollReveal>
+                        </div>
                     </div>
                 </div>
                 {/* Text Content  */}

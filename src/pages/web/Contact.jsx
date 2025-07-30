@@ -1,15 +1,41 @@
 import { useEffect } from 'react';
-import { FiMail, FiPhone, FiMapPin, FiMap } from 'react-icons/fi'; // optional icon pack
+import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'; // optional icon pack
 import Container from '../../components/Container';
 import './contact.css';
 import ScrollReveal from '../../components/ScrollReveal';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   useEffect(() => {
     document.documentElement.style.setProperty('--h-color', '#0f1c36');
-    window.scrollTo({ top: 0});
+    window.scrollTo({ top: 0 });
   })
   return (<>
+    <Helmet>
+      {/* Page Title */}
+      <title>Contact Us | Orient Fibertech</title>
+
+      {/* Meta Description */}
+      <meta
+        name="description"
+        content="Get in touch with Orient Ceramic Fibertech LLP – leading ceramic fiber insulation manufacturer in Morbi, Gujarat, India. We are here to assist you with your industrial thermal insulation needs."
+      />
+
+      {/* Keywords for SEO */}
+      <meta
+        name="keywords"
+        content="contact Orient ceramic Fibertech, ceramic fiber insulation contact, ceramic fiber manufacturer in Gujarat, ceramic fiber manufacturer in morbi,ceramic fiber manufacturer in india, thermal insulation, ceramic blanket, industrial insulation"
+      />
+
+      {/* Open Graph Meta for Social Sharing */}
+      <meta property="og:title" content="Contact Orient Fibertech" />
+      <meta
+        property="og:description"
+        content="Contact Orient Ceramic Fibertech LLP for premium ceramic fiber insulation products in India. Fast response, expert support."
+      />
+      <meta property="og:url" content="https://orientfibertech.com/Contact" />
+      <meta property="og:type" content="website" />
+    </Helmet>
     <Container title="" className='pt-[var(--padding-top)]' childClassName='gradient-bg'>
 
       <h1 className="contact-h1">enquiry</h1>
@@ -40,7 +66,7 @@ const Contact = () => {
         <ScrollReveal className="enquiry-QR-wrapper flex-50-child" id="enquiry_qr_div" animation='fade-right'>
           <div className="enquiry-QR-div">
             <p>for quick support <br /> on whatsapp</p>
-            <img loading="lazy"  src="/front-image/qr-code.png" alt="" />
+            <img loading="lazy" src="/front-image/qr-code.png" alt="" />
             <p>scan qr code</p>
           </div>
         </ScrollReveal>
@@ -50,9 +76,9 @@ const Contact = () => {
           <div className="info-address-wrapper">
             <h1 className="address-title">Factory & Registered Address</h1>
             <div className="flex items-start p-[4px_1em]">
-            <div>
-              <FiMapPin  className="mt-[0.8em]" />
-            </div>
+              <div>
+                <FiMapPin className="mt-[0.8em]" />
+              </div>
               <div>
                 <p className="company-title">orient ceramic fibertech LLp</p>
                 <p>GST NO : 24AAGFO4823P1ZW </p>

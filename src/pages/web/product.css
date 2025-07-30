@@ -315,7 +315,7 @@ button.icon-div.active p {
     flex: 1 0 31%;
 }
 
-.pro-wrap .pro-sub-detail h6 {
+.pro-wrap .pro-sub-detail h2 {
     text-transform: capitalize;
     font-size: 1.4em;
     color: var(--cl-dark);

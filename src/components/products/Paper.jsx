@@ -10,9 +10,9 @@ const Paper = () => {
             <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
-                        <ScrollReveal className="product-brief" id="product_brief">
+                        <div className="product-brief" id="product_brief">
                             <p>Lightweight and flexible, Ceramic Fiber Paper is an advanced insulation material designed for high-temperature environments. It delivers exceptional thermal insulation, making it suitable for industries like aerospace, automotive, and manufacturing, especially where thin insulation layers are essential.</p>
-                        </ScrollReveal>
+                        </div>
                     </div>
                 </div>
                 {/* Text Content  */}
@@ -34,15 +34,15 @@ const Paper = () => {
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
-                                    <h6>density range</h6>
+                                    <h2>density range</h2>
                                     <p>- kg/m3</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>temperature range</h6>
+                                    <h2>temperature range</h2>
                                     <p>1260 - 1425 °C</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>size</h6>
+                                    <h2>size</h2>
                                     <p>1000 x 500 x 3 <span className="unit-span">mm</span></p>
                                     <p>1000 x 1000 x 3 <span className="unit-span">mm</span></p>
                                     <p>1000 x 500 x 2 <span className="unit-span">mm</span></p>

@@ -3,8 +3,17 @@ import ResponsiveImage from '../../components/ResponsiveImage';
 import ScrollReveal from '../../components/ScrollReveal';
 import './home.css';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => (
+  <>
+    <Helmet>
+        <title>About Us | Orient Fibertech</title>
+        <meta name="description" content="Learn about Orient Ceramic Fibertech LLP, a leading ceramic fiber insulation manufacturer in Gujarat." />
+        <meta name="keywords" content="ceramic fiber products, Gujarat manufacturer, thermal blankets, Orient Fibertech" />
+        <meta property="og:title" content="About Orient Fibertech" />
+        <meta property="og:description" content="We specialize in ceramic fiber products for industrial insulation applications." />
+      </Helmet>
   <section className="w-full bg-ui-bg-medium py-16 relative" id='about_us'>
     {/* Visual / Image */}
     <div className="flex-1 w-full absolute top-0 left-0 z-0 opacity-50 overflow-visible ">
@@ -32,8 +41,8 @@ const About = () => (
               <div className="icon-svg">
               <ResponsiveImage folder='home' name="shield_arrow1" alt="About Orient Fibertech" className="pointer-event-none" />
                 <div className="title">
-                  <h3 className="childe-title">15+ years of excellence in thermal insulation
-                    solutions.</h3>
+                  <h2 className="childe-title">15+ years of excellence in thermal insulation
+                    solutions.</h2>
                 </div>
               </div>
             </div>
@@ -44,7 +53,7 @@ const About = () => (
               <div className="icon-svg">
                 <ResponsiveImage folder='home' name="gears2" alt="About Orient Fibertech" className="pointer-event-none" />
                 <div className="title">
-                  <h3 className="childe-title">Custom-tailored solutions for diverse industries.</h3>
+                  <h2 className="childe-title">Custom-tailored solutions for diverse industries.</h2>
                 </div>
               </div>
             </div>
@@ -55,8 +64,8 @@ const About = () => (
               <div className="icon-svg">
                 <ResponsiveImage folder='home' name="isologo" alt="About Orient Fibertech" className="pointer-event-none" />
                 <div className="title">
-                  <h3 className="childe-title">ISO-certified, internationally recognized standards.
-                  </h3>
+                  <h2 className="childe-title">ISO-certified, internationally recognized standards.
+                  </h2>
                 </div>
                 <NavLink id="a-certificates" to="/certificates" target="_blank"
                   rel="noopener noreferrer">see our certificates</NavLink>
@@ -67,6 +76,7 @@ const About = () => (
       </div>
     </Container>
   </section>
+  </>
 );
 
 export default About;
