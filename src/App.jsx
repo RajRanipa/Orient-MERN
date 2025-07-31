@@ -6,7 +6,6 @@ import WebRoutes from './routes/WebRoutes';
 // import { HelmetProvider } from 'react-helmet';
 import { ScrollObserverProvider } from './context/ScrollObserverContext';
 import { injectSpeedInsights } from "@vercel/speed-insights";
-import { Analytics } from '@vercel/analytics/next';
 injectSpeedInsights();
 
 
@@ -20,7 +19,6 @@ const App = () => {
               <AuthProvider>
                 <BrowserRouter>
                   <WebRoutes />
-                  <Analytics />
                 </BrowserRouter>
               </AuthProvider>
             </ThemeProvider>
