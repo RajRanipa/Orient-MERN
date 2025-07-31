@@ -25,6 +25,7 @@ const LogInOut = ({ variant = 'header', className = '' }) => {
       onClick={handleLogout}
       className={`${combinedStyle} flex items-center gap-2 px-4 py-2 rounded-md bor `}
       aria-label="Log out"
+      id="loginout_button"
     >
       {/* <FiLogOut className="text-lg" /> */}
       <img loading="lazy"src="/public/front-image/icon/logout.svg" alt="logo"/>
@@ -35,6 +36,7 @@ const LogInOut = ({ variant = 'header', className = '' }) => {
       onClick={() => navigate('/login')}
       className={`${combinedStyle} flex items-center gap-2 px-4 py-2 rounded-md`}
       aria-label="Log in"
+      id="loginout_button"
     >
       {/* <FiLogIn className="text-lg" /> */}
       <img loading="lazy"src="/front-image/icon/login.svg" alt="logo"/>

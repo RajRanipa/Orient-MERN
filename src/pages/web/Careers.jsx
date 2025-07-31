@@ -6,6 +6,8 @@ import ScrollReveal from '../../components/ScrollReveal';
 
 const Careers = () => {
   useEffect(() => {
+    const loginout_icon = document.querySelector('#loginout_button img');
+    loginout_icon.style.filter = 'invert(0%)';
     document.documentElement.style.setProperty('--h-color', '#0f1c36');
     window.scrollTo({ top: 0});
   })

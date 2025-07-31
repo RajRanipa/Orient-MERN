@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollReveal from './ScrollReveal'; // if you're using a global scroll observer
 import '../pages/web/home.css';
 import ResponsiveImage from './ResponsiveImage';
+import { NavLink } from 'react-router-dom';
 
 const ProductBlock = () => {
     return (
@@ -30,14 +31,7 @@ const ProductBlock = () => {
                         ensuring energy efficiency and reliability in industrial applications such as furnace
                         linings, kiln insulation, and boiler seals.
                     </p>
-                    <a
-                        href="/ceramic-fiber-blanket"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="read-more-a "
-                    >
-                        Explore Ceramic Fiber Blanket Applications
-                    </a>
+                    <NavLink to="/products/ceramic-fiber-blanket" className="read-more-a" >Explore Ceramic Fiber Blanket Applications</NavLink>
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col-reverse  lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
@@ -55,14 +49,7 @@ const ProductBlock = () => {
                         reliable performance in heavy-duty manufacturing environments with our high-quality
                         boards.
                     </p>
-                    <a
-                        className="read-more-a lg:text-right"
-                        href="/ceramic-fiber-board"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Discover Ceramic Fiber Board Applications
-                    </a>
+                    <NavLink to="/products/ceramic-fiber-board" className="read-more-a" >Discover Ceramic Fiber Board Applications</NavLink>
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal animation='fade-left' id="board-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover">
@@ -92,14 +79,7 @@ const ProductBlock = () => {
                             and superior shock resistance</strong>. Perfect for industrial environments managing
                         extreme heat, it ensures efficiency and reliability in diverse applications.
                     </p>
-                    <a
-                        className="read-more-a"
-                        href="/ceramic-fiber-bulk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn More About Ceramic Fiber Bulk Applications
-                    </a>
+                    <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Learn More About Ceramic Fiber Bulk Applications</NavLink>
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
@@ -116,14 +96,7 @@ const ProductBlock = () => {
                         pre-engineered anchoring systems and compressed ceramic fiber blankets, these modules
                         ensure quick installation and long-lasting insulation for furnaces, kilns, and more.
                     </p>
-                    <a
-                        className="read-more-a lg:text-right"
-                        href="/ceramic-fiber-module"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn More About Ceramic Fiber Module Features
-                    </a>
+                    <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Learn More About Ceramic Fiber Module Features</NavLink>
                 </ScrollReveal>
                 <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
                     animation="fade-left" >
@@ -152,14 +125,7 @@ const ProductBlock = () => {
                         thermal properties, it is perfect for aerospace, automotive, and industrial
                         applications. Ensure efficiency and reliability with our advanced insulation solutions.
                     </p>
-                    <a
-                        className="read-more-a"
-                        href="/ceramic-fiber-paper"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Explore Ceramic Fiber Paper Benefits
-                    </a>
+                    <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Explore Ceramic Fiber Paper Benefits</NavLink>
                 </ScrollReveal>
             </div>
         </>

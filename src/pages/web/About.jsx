@@ -67,8 +67,7 @@ const About = () => (
                   <h2 className="childe-title">ISO-certified, internationally recognized standards.
                   </h2>
                 </div>
-                <NavLink id="a-certificates" to="/certificates" target="_blank"
-                  rel="noopener noreferrer">see our certificates</NavLink>
+                <NavLink id="a-certificates" to="/certificates">see our certificates</NavLink>
               </div>
             </div>
           </ScrollReveal>

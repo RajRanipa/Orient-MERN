@@ -52,6 +52,7 @@ const Home = () => {
     useEffect(() => {
       const setHeaderColor = () => {
         const hero_home = document.getElementById('hero_home');
+        const loginout_icon = document.querySelector('#loginout_button img');
         const header_height = document.getElementById('navHeader').getBoundingClientRect().height;
 
         if (!hero_home) return;
@@ -61,8 +62,10 @@ const Home = () => {
         // Optional: Set header color on scroll
         if (window.scrollY > hero_home_Rect.height - header_height) {
           document.documentElement.style.setProperty('--h-color', '#0f1c36');
+          loginout_icon.style.filter = 'invert(0%)';
         } else {
           document.documentElement.style.setProperty('--h-color', 'white');
+          loginout_icon.style.filter = 'invert(100%)';
         }
       };
 

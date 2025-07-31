@@ -36,6 +36,7 @@ const Products = () => {
   useEffect(() => {
     const setProductPaddings = () => {
       const wrapper = document.getElementById('product_header_wrapper');
+      const loginout_icon = document.querySelector('#loginout_button img');
       if (!wrapper) return;
       const rect = wrapper.getBoundingClientRect();
       document.documentElement.style.setProperty('--product-padding', rect.height + 'px');
@@ -43,6 +44,8 @@ const Products = () => {
       const scrollY = window.scrollY;
       const color = scrollY > rect.height ? '#0f1c36' : 'white';
       document.documentElement.style.setProperty('--h-color', color);
+      const invert = scrollY > rect.height ? 0 : 1
+      loginout_icon.style.filter = `invert(${invert})`;
     };
 
     setProductPaddings();
