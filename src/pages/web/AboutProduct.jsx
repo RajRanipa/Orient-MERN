@@ -139,9 +139,12 @@ const AboutProduct = () => {
         <Container className="flex flex-col items-center gap-12 z-10 relative" padding="true" id="products">
 
             {/* Text Content  */}
+            <div className="product-head" id="product_head">
+                <h1 className="text-center text-[3.2em]">Our Products</h1>
+            </div>
             <div className="product-headline" id="product_headline">
-                <h3 className="headline-h3-right text-[1.8em] lg:text-[3em]">TOP QUALITY IS</h3>
-                <h3 className="headline-h3-left text-[1.8em] lg:text-[3em]">OUR FIRST PRIORITY</h3>
+                <h2 className="headline-h2-right text-[2.8em]">TOP QUALITY IS</h2>
+                <h2 className="headline-h2-left text-[2.8em]">OUR FIRST PRIORITY</h2>
             </div>
             <div className="product-description">
                 <ProductBlock />

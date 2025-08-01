@@ -1,16 +1,36 @@
-import React, { useEffect } from 'react';
+import { useEffect , useRef } from 'react';
 import Layout from '../../components/Layout';
 import './careers.css';
 import Container from '../../components/Container';
 import ScrollReveal from '../../components/ScrollReveal';
+import emailjs from '@emailjs/browser';
 
 const Careers = () => {
+  const formRef = useRef();
   useEffect(() => {
     const loginout_icon = document.querySelector('#loginout_button img');
     loginout_icon.style.filter = 'invert(0%)';
     document.documentElement.style.setProperty('--h-color', '#0f1c36');
     window.scrollTo({ top: 0});
   })
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_tnuhefg',
+      'template_rk7773l',
+      formRef.current,
+      'Bq_HXi-8MYi4dkdYr'
+    )
+      .then(() => {
+        alert('Message sent successfully!');
+        formRef.current.reset(); // This resets all form fields
+      })
+      .catch((error) => {
+        console.error('EmailJS Error:', error);
+        alert('Failed to send message');
+      });
+  };
   return (
     <>
       <Container childClassName='overflow-visible'>
@@ -31,7 +51,7 @@ const Careers = () => {
               <p>to become a part of the accelerated growth at orient.</p>
             </ScrollReveal>
             <ScrollReveal id="career_form_div" className="form-div flex-50-child flex justify-center">
-              <form id="careerForm" action="#" method="post">
+              <form id="careerForm" action="#" method="post" ref={formRef} onSubmit={handleSubmit} >
                 <h1 className='text-[1.5em]'>Send Us A Message</h1>
 
                 {/* <!-- Name --> */}
@@ -51,7 +71,7 @@ const Careers = () => {
 
                 {/* <!-- File Upload --> */}
                 <div className="input-wrapper">
-                  <input type="file" id="resume" name="resume" accept=".pdf,.docx" required />
+                  <input type="file" id="resume" name="resume" accept=".pdf,.docx" />
                 </div>
 
                 <button type="submit">Submit</button>

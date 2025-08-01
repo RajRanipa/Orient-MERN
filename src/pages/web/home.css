@@ -226,25 +226,37 @@
 
 /* --------------------------- product design */
 
+.product-head {
+    width: 100%;
+    padding: 1rem;
+}
+
+.product-head h1{
+    font-family: Sangbleuogsans, sans-serif;
+    font-weight: bold;
+     background: linear-gradient(90deg, var(--cl-blue-logo), var(--cl-sky-logo));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .product-headline {
     width: 100%;
     padding: 2rem 1rem;
     color: var(--cl-dark);
 }
 
-.product-headline h3 {
+.product-headline h2 {
     font-family: Sangbleuogserif, 'Times New Roman', sans-serif;
     font-weight: 100;
     transition: transform linear 0.3s;
 }
 
-.headline-h3-right {
+.headline-h2-right {
     text-align: right;
     transform: translateX(calc(0px - var(--slide-x)));
-
 }
 
-.headline-h3-left {
+.headline-h2-left {
     text-align: left;
     transform: translateX(var(--slide-x));
 }
@@ -286,7 +298,7 @@
 }
 
 .product-details h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: Sangbleuogserif, 'Times New Roman', sans-serif;
     background: linear-gradient(125deg, var(--cl-blue-logo), var(--cl-sky-logo));
     background-clip: text;
@@ -297,7 +309,7 @@
 }
 
 .product-details h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: lighter;
     line-height: normal;
 }

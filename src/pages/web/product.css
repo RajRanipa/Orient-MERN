@@ -127,8 +127,8 @@ a.icon-div.active {
     box-shadow: 5px 5px 10px rgb(0 0 0 / 30%), -5px -5px 10px rgb(12 23 43), inset 2px 2px 4px rgb(44 63 105 / 80%), inset -2px -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-button.icon-div.active svg path,
-button.icon-div.active p {
+a.icon-div.active svg path,
+a.icon-div.active h1 {
     stroke: var(--cl-white);
     color: var(--cl-white);
 }
@@ -142,12 +142,14 @@ button.icon-div.active p {
     border-radius: 7px;
 }
 
-.icon-div p {
+.icon-div h1 {
     color: var(--cl-sky-logo);
     font-size: 0.85em;
     text-transform: capitalize;
     letter-spacing: 1px;
-    text-wrap-mode: nowrap;
+    text-wrap: auto;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
 }
 
 .icon-div svg {
@@ -289,7 +291,7 @@ button.icon-div.active p {
     /* padding-right: 10px; */
 }
 
-.pro-wrap .pro-sub-detail.flex h6,
+.pro-wrap .pro-sub-detail.flex h2,
 .pro-wrap .pro-sub-detail.flex .note-span {
     flex: 1 0 100%;
 }

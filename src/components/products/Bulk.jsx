@@ -36,11 +36,11 @@ const Bulk = () => {
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
-                                    <h6>colour</h6>
+                                    <h2>colour</h2>
                                     <p>white</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h6>temperature range</h6>
+                                    <h2>temperature range</h2>
                                     <p>1260 - 1425 °C</p>
                                 </div>
                                 <div className="pro-sub-detail">

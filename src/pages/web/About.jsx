@@ -17,7 +17,8 @@ const About = () => (
   <section className="w-full bg-ui-bg-medium py-16 relative" id='about_us'>
     {/* Visual / Image */}
     <div className="flex-1 w-full absolute top-0 left-0 z-0 opacity-50 overflow-visible ">
-      <ResponsiveImage folder='home' name="orient_vector" alt="About Orient Fibertech" className="w-full h-[200vh] object-[0%_0%] object-cover " />
+      {/* <ResponsiveImage folder='home' name="orient_vector" alt="About Orient Fibertech" className="w-full h-[200vh] object-[0%_0%] object-cover " /> */}
+      <img loading="lazy" src="./front-image/home/orient_vector_1800.png" alt="About Orient Fibertech" className="w-full h-[200vh] object-[0%_0%] object-cover " />
     </div>
     <Container className="flex flex-col lg:flex-row items-center gap-12 z-10 relative" padding="true">
 

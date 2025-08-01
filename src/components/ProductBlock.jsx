@@ -7,13 +7,13 @@ import { NavLink } from 'react-router-dom';
 const ProductBlock = () => {
     return (
         <>
-            <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
+            <div className="w-full flex flex-col lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
                 {/* Image Section */}
                 <ScrollReveal animation="fade-right" id="blanket-img"
-                    className="relative flex-1 max-w-[80%] w-full sm:max-w-[90%] lg:max-w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
+                    className="relative flex-1 max-w-[80%] w-full sm:max-w-[90%] lg:max-w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center "
                     style={{ filter: 'blur(var(--progress))' }}
                 >
-                <ResponsiveImage folder='home' name="blanket_crop" alt="High-Temperature Ceramic Fiber Blanket" className="blanket-img" />
+                    <ResponsiveImage folder='home' name="blanket_crop" alt="High-Temperature Ceramic Fiber Blanket" className="blanket-img" />
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal animation="fade-left" className="product-details" id="blanket-desc">
@@ -34,9 +34,9 @@ const ProductBlock = () => {
                     <NavLink to="/products/ceramic-fiber-blanket" className="read-more-a" >Explore Ceramic Fiber Blanket Applications</NavLink>
                 </ScrollReveal>
             </div>
-            <div className="w-full flex flex-col-reverse  lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
+            <div className="w-full flex flex-col-reverse  lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
                 {/* Image Section */}
-                <ScrollReveal className="product-details lg:text-right lg:items-end" animation='fade-right' id="board-desc">
+                <ScrollReveal className="product-details lg:text-right lg:items-end md:text-right md:items-end" animation='fade-right' id="board-desc">
                     <h1>Ceramic Fiber <br />Board</h1>
                     <h2 className="text-ui-regular">
                         Durable High-Temperature Insulation
@@ -52,14 +52,14 @@ const ProductBlock = () => {
                     <NavLink to="/products/ceramic-fiber-board" className="read-more-a" >Discover Ceramic Fiber Board Applications</NavLink>
                 </ScrollReveal>
                 {/* Details Section */}
-                <ScrollReveal animation='fade-left' id="board-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover">
+                <ScrollReveal animation='fade-left' id="board-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center">
                     <ResponsiveImage folder='home' name="board_crop" alt="Ceramic Fiber Board" className="board-img" />
                 </ScrollReveal>
             </div>
-            <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
+            <div className="w-full flex flex-col lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
                 {/* Image Section */}
                 <ScrollReveal animation="fade-right" id="bulk-img"
-                    className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
+                    className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
                     <ResponsiveImage folder='home' name="bulk_crop" alt="Ceramic Fiber Bulk" className="bulk-img" />
@@ -82,8 +82,8 @@ const ProductBlock = () => {
                     <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Learn More About Ceramic Fiber Bulk Applications</NavLink>
                 </ScrollReveal>
             </div>
-            <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
-                <ScrollReveal className="product-details lg:text-right lg:items-end" animation="fade-right" id="module-desc">
+            <div className="w-full flex flex-col-reverse lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
+                <ScrollReveal className="product-details lg:text-right lg:items-end md:text-right md:items-end" animation="fade-right" id="module-desc">
                     <h1>
                         Ceramic Fiber <br /> Module
                     </h1>
@@ -98,15 +98,15 @@ const ProductBlock = () => {
                     </p>
                     <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Learn More About Ceramic Fiber Module Features</NavLink>
                 </ScrollReveal>
-                <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
+                <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center"
                     animation="fade-left" >
                     <ResponsiveImage folder='home' name="module_crop" alt="Ceramic Fiber Module" className="module-img" />
                 </ScrollReveal>
             </div>
-            <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
+            <div className="w-full flex flex-col lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
                 {/* Image Section */}
                 <ScrollReveal animation="fade-right" id="paper-img"
-                    className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover"
+                    className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center"
                     style={{ filter: 'blur(var(--progress))' }}
                 >
                     <ResponsiveImage folder='home' name="paper_crop" alt="Ceramic Fiber Paper" className="paper-img" />
