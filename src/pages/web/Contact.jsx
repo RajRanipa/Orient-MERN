@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
           <div className="info-title-wrapper">
             <h1 className="info-title">for Marketing enquiry</h1>
-            <p className="flex gap-2 items-center"> <FiMail /> orientmarketing@gmail.com</p>
+            <p className="flex gap-2 items-center"> <FiMail /> orientfibertechllp@gmail.com</p>
             <p className="flex gap-2 items-center"> <FiPhone /> +91 7575078616</p>
           </div>
           <div className="info-title-wrapper">
@@ -84,7 +84,7 @@ const Contact = () => {
           <div className="info-title-wrapper">
             <h1 className="info-title">For Other enquiry</h1>
             <p className="flex gap-2 items-center"> <FiMail /> orientfibertechllp@gmail.com</p>
-            <p className="flex gap-2 items-center"> <FiPhone /> +91 95370 80483</p>
+            <p className="flex gap-2 items-center"> <FiPhone /> +91 90238 78926</p>
           </div>
         </ScrollReveal>
         <ScrollReveal className="enquiry-QR-wrapper flex-50-child" id="enquiry_qr_div" animation='fade-right'>
