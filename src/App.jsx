@@ -11,17 +11,13 @@ const App = () => {
   return (
     <>
       <React.StrictMode>
-        {/* <HelmetProvider> */}
           <ScrollObserverProvider>
             <ThemeProvider>
-              {/* <AuthProvider> */}
                 <BrowserRouter>
                   <WebRoutes />
                 </BrowserRouter>
-              {/* </AuthProvider> */}
             </ThemeProvider>
           </ScrollObserverProvider>
-        {/* </HelmetProvider> */}
       </React.StrictMode>
     </>
   );
