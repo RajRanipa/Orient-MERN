@@ -41,7 +41,7 @@ const Header = () => {
   // }, []);
 
   useEffect(() => {
-    const isProductPage = location.pathname.includes('/products') // or your correct path
+    const isProductPage = location.pathname.includes('/ceramic-fiber') // or your correct path
 
     const logo_height = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--logo-wrraper-height'));
     const logo_height_Value = logo_height * 2;

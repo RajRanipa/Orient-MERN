@@ -25,7 +25,7 @@ const Paper = () => {
                     content="We manufacture world-class ceramic fiber insulation solutions including blankets, boards, and modules. Delivered across India from our Gujarat facility."
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://orientfibertech.com/products/ceramic-fiber-blanket" />
+                <meta property="og:url" content="https://orientfibertech.com/ceramic-fiber-blanket" />
                 <meta property="og:image" content="https://orientfibertech.com/front-image/home/blanket_crop_1800.webp" />
                 <meta name="robots" content="index, follow" />
             </Helmet>
@@ -115,7 +115,7 @@ const Paper = () => {
                                 <Atag
                                     key={"explore"}
                                     linkname={"explore"}
-                                    href={"/products/ceramic-fiber-bulk"}
+                                    href={"/ceramic-fiber-bulk"}
                                     onClick={() => { }}
                                     className={cn(
                                         'transition duration-200',
@@ -132,7 +132,7 @@ const Paper = () => {
                                 <Atag
                                     key={"explore"}
                                     linkname={"explore"}
-                                    href={"/products/ceramic-fiber-blanket"}
+                                    href={"/ceramic-fiber-blanket"}
                                     onClick={() => { }}
                                     className={cn(
                                         'transition duration-200',

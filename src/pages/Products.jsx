@@ -74,7 +74,7 @@ const Products = () => {
           content="We manufacture world-class ceramic fiber insulation solutions including blankets, boards, and modules. Delivered across India from our Gujarat facility."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://orientfibertech.com/products/ceramic-fiber-blanket" />
+        <meta property="og:url" content="https://orientfibertech.com/ceramic-fiber-blanket" />
         <meta property="og:image" content="https://orientfibertech.com/front-image/home/blanket_crop_1800.webp" />
         <meta name="robots" content="index, follow" />
       </Helmet> */}
@@ -86,7 +86,7 @@ const Products = () => {
               <div className="product-wrapper">
                 <div className="icon-wrapper">
                   <NavLink
-                    to="/products/ceramic-fiber-blanket"
+                    to="/ceramic-fiber-blanket"
                     className={({ isActive }) =>
                       `icon-div ${isActive ? 'active' : ''}`
                     }
@@ -100,7 +100,7 @@ const Products = () => {
                     <h1>ceramic fiber blanket</h1>
                   </NavLink>
                   <NavLink
-                    to="/products/ceramic-fiber-board"
+                    to="/ceramic-fiber-board"
                     className={({ isActive }) =>
                       `icon-div ${isActive ? 'active' : ''}`
                     }
@@ -115,7 +115,7 @@ const Products = () => {
                     <h1>ceramic fiber board</h1>
                   </NavLink>
                   <NavLink
-                    to="/products/ceramic-fiber-bulk"
+                    to="/ceramic-fiber-bulk"
                     className={({ isActive }) =>
                       `icon-div ${isActive ? 'active' : ''}`
                     }
@@ -135,7 +135,7 @@ const Products = () => {
                     <h1>ceramic fiber bulk</h1>
                   </NavLink>
                   <NavLink
-                    to="/products/ceramic-fiber-module"
+                    to="/ceramic-fiber-module"
                     className={({ isActive }) =>
                       `icon-div ${isActive ? 'active' : ''}`
                     }
@@ -151,7 +151,7 @@ const Products = () => {
                     <h1>ceramic fiber module</h1>
                   </NavLink>
                   <NavLink
-                    to="/products/ceramic-fiber-paper"
+                    to="/ceramic-fiber-paper"
                     className={({ isActive }) =>
                       `icon-div ${isActive ? 'active' : ''}`
                     }
