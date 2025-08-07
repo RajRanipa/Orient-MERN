@@ -49,11 +49,11 @@ const WebRoutes = () => {
             <PageTransition><Paper /></PageTransition>
           </Suspense>
         } />
-        {/* <Route path="/ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
+        <Route path="/ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
         <Route path="/ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
         <Route path="/ceramic-fiber-bulk" element={<PageTransition><Bulk /></PageTransition>} />
         <Route path="/ceramic-fiber-module" element={<PageTransition><Module /></PageTransition>} />
-        <Route path="/ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} /> */}
+        <Route path="/ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} />
         <Route path="/career" element={<PageTransition><Careers /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/certificates" element={<PageTransition><Certificate /></PageTransition>} />

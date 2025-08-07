@@ -11,13 +11,13 @@ const App = () => {
   return (
     <>
       <React.StrictMode>
-          <ScrollObserverProvider>
-            <ThemeProvider>
-                <BrowserRouter>
-                  <WebRoutes />
-                </BrowserRouter>
-            </ThemeProvider>
-          </ScrollObserverProvider>
+        <ThemeProvider>
+          <BrowserRouter>
+            <ScrollObserverProvider>
+              <WebRoutes />
+            </ScrollObserverProvider>
+          </BrowserRouter>
+        </ThemeProvider>
       </React.StrictMode>
     </>
   );
