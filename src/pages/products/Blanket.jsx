@@ -60,7 +60,7 @@ const Blanket = () => {
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
                                     <h2>density range</h2>
-                                    <p>64 - 96 - 128 kg/m3</p>
+                                    <p>64 - 96 - 128 - 160 kg/m3</p>
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>temperature range</h2>
