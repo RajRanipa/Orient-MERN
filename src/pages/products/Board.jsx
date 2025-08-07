@@ -4,7 +4,7 @@ import Atag from "../../components/Atag";
 import { cn } from "../../utils/cn";
 import ResponsiveImage from "../../components/ResponsiveImage";
 import { Helmet } from 'react-helmet';
-import Products from ".";
+import Products from "../Products";
 
 const Board = () => {
     return (

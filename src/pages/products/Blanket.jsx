@@ -5,7 +5,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 import Atag from "../../components/Atag";
 import { cn } from "../../utils/cn";
 import ResponsiveImage from "../../components/ResponsiveImage";
-import Products from ".";
+import Products from "../Products";
 import { Helmet } from 'react-helmet';
 
 const Blanket = () => {
