@@ -1,24 +1,49 @@
-import Container  from "../Container";
-import ScrollReveal from "../ScrollReveal";
-import Atag from "../Atag";
+// import ProductDetail from './ProductDetail';
+// import { useOutletContext } from 'react-router-dom';
+import Container from "../../components/Container";
+import ScrollReveal from "../../components/ScrollReveal";
+import Atag from "../../components/Atag";
 import { cn } from "../../utils/cn";
-import ResponsiveImage from "../ResponsiveImage";
+import ResponsiveImage from "../../components/ResponsiveImage";
+import Products from ".";
+import { Helmet } from 'react-helmet';
 
-const Module = () => {
+const Blanket = () => {
     return (
         <>
-            <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
+            <Helmet>
+                <title>Ceramic Fiber Blankets</title>
+                <meta
+                    name="description"
+                    content="Explore high-quality ceramic fiber blankets, modules, boards, paper & bulk fiber from Orient Ceramic Fibertech LLP. Based in Gujarat, India."
+                />
+                <meta
+                    name="keywords"
+                    content="ceramic fiber blanket, ceramic fiber boards, ceramic fiber bulk, thermal insulation products, fiber modules, insulation paper, blankets, modules, boards, paper , bulk, manufacturer in Gujarat"
+                />
+                <meta property="og:title" content="Ceramic Fiber Insulation Products | Orient Fibertech" />
+                <meta
+                    property="og:description"
+                    content="We manufacture world-class ceramic fiber insulation solutions including blankets, boards, and modules. Delivered across India from our Gujarat facility."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://orientfibertech.com/products/ceramic-fiber-blanket" />
+                <meta property="og:image" content="https://orientfibertech.com/front-image/home/blanket_crop_1800.webp" />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
+            <Products/>
+            <Container className="flex flex-col items-center gap-12 z-5 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
-                            <p>Crafted from folded and compressed ceramic fiber blankets, Ceramic Fiber Modules are designed for use in extreme-temperature environments. Equipped with pre-installed anchoring systems, they offer enhanced thermal insulation, reduce installation time, and boost energy efficiency in furnaces, kilns, and industrial equipment.</p>
+                            <p>The Ceramic Fiber Blanket is made from interwoven ceramic fibers, designed to handle temperatures up to 1425°C. It combines low thermal conductivity with exceptional resistance to thermal shock, making it ideal for industrial uses like furnace linings, kiln insulation, and boiler seals. Its lightweight and flexible structure ensure seamless installation and long-lasting performance.</p>
                         </div>
                     </div>
                 </div>
                 {/* Text Content  */}
             </Container>
             <div className="strock-img">
-                <img loading="lazy"  src="/front-image/product/GadientStrock.svg" alt="" srcSet="" />
+                <img loading="lazy" src="/front-image/product/GadientStrock.svg" alt="" srcSet="" />
             </div>
             <div className="pro-details-section">
                 <Container >
@@ -27,15 +52,15 @@ const Module = () => {
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>benefits</h1>
                                 <div className="pro-sub-detail">
-                                    <p> <span>• </span>Reduces heat loss</p>
-                                    <p> <span>• </span>Asbestos-free</p>
+                                    <p> <span>• </span>reduces heat loss</p>
+                                    <p> <span>• </span>asbestos-free</p>
                                 </div>
                             </div>
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
                                     <h2>density range</h2>
-                                    <p>128 -  160 - 190 kg/m3</p>
+                                    <p>64 - 96 - 128 kg/m3</p>
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>temperature range</h2>
@@ -43,23 +68,15 @@ const Module = () => {
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>size</h2>
-                                    <p>305 x 305 x 305 <span className="unit-span">mm</span></p>
+                                    <p>7300 x 610 x 12 mm</p>
+                                    <p>7300 x 610 x 25 mm</p>
+                                    <p>3650 x 610 x 50 mm</p>
                                     <span className="note-span">customized size available*</span>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <h2>module type</h2>
-                                    <p>folded module</p>
-                                    <p>anchor module</p>
-                                </div>
-                                <div className="pro-sub-detail">
-                                    <h2>anchor type</h2>
-                                    <p>cerlock anchor</p>
-                                    <span className="note-span">customized anchor available*</span>
-                                </div>
-                                <div className="pro-sub-detail">
-                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Module.pdf" download>
+                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Blanket.pdf" download>
                                         <span className="download-span">Download PDF</span>
-                                        <img loading="lazy"  className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                        <img loading="lazy" className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -70,20 +87,24 @@ const Module = () => {
                                 <div className="pro-sub-detail">
                                     <div className="application-img items-center justify-center md:items-start md:justify-start">
                                         <div className="app-img">
-                                            <ResponsiveImage folder="product" name="module_power_plant" alt="furnace" />
-                                            <p>power plant</p>
-                                        </div>
-                                        <div className="app-img">
-                                            <ResponsiveImage folder="product" name="module_small_furnace" alt="furnace" />
+                                            <ResponsiveImage folder="product" name="Blanket_funace_lining_2" alt="furnace" />
                                             <p>Furnace Lining</p>
                                         </div>
                                         <div className="app-img">
-                                            <ResponsiveImage folder="product" name="module_kilin" alt="furnace" />
-                                            <p>high-temperature kiln</p>
+                                            <ResponsiveImage folder="product" name="Blanket_small_furnace" alt="furnace" />
+                                            <p>Small Furnace</p>
                                         </div>
                                         <div className="app-img">
-                                            <ResponsiveImage folder="product" name="module_shuttle_kiln" alt="furnace" />
-                                            <p>Shuttle kiln</p>
+                                            <ResponsiveImage folder="product" name="Blanket_boiler" alt="furnace" />
+                                            <p>Boiler Insulation</p>
+                                        </div>
+                                        <div className="app-img">
+                                            <ResponsiveImage folder="product" name="Blanket_pipe" alt="furnace" />
+                                            <p>Pipe Insulation</p>
+                                        </div>
+                                        <div className="app-img">
+                                            <ResponsiveImage folder="product" name="Blanket_kilin" alt="furnace" />
+                                            <p>kiln Insulation</p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,36 +114,36 @@ const Module = () => {
                     <div className="more-pro-wrapper">
                         <h1>related products</h1>
                         <div className="explore-wrapper border-b-[0.5px] border-black w-full md:w-[50%] md:border-r-[0.5px] md:border-b-0">
-                            <p>ceramic fiber <br />blanket</p>
+                            <p>ceramic fiber <br />board</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
                                     linkname={"explore"}
-                                    href={"/products/ceramic-fiber-blanket"}
+                                    href={"/products/ceramic-fiber-board"}
                                     onClick={() => { }}
                                     className={cn(
                                         'transition duration-200',
                                     )}
                                 >
                                 </Atag>
-                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy" src="/front-image/arrow.svg" alt="" />
                             </div>
 
                         </div>
                         <div className="explore-wrapper border-t-[0.5px] border-black w-full md:w-[50%] md:border-l-[0.5px] md:border-t-0">
-                            <p>ceramic fiber <br />bulk</p>
+                            <p>ceramic fiber <br />module</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
                                     linkname={"explore"}
-                                    href={"/products/ceramic-fiber-bulk"}
+                                    href={"/products/ceramic-fiber-module"}
                                     onClick={() => { }}
                                     className={cn(
                                         'transition duration-200',
                                     )}
                                 >
                                 </Atag>
-                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy" src="/front-image/arrow.svg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -131,4 +152,4 @@ const Module = () => {
         </>
     );
 }
-export default Module;
+export default Blanket;

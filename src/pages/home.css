@@ -226,17 +226,13 @@
 
 /* --------------------------- product design */
 
-.product-head {
-    width: 100%;
-    padding: 1rem;
-}
-
-.product-head h1{
+.product-title h1{
     font-family: Sangbleuogsans, sans-serif;
     font-weight: bold;
      background: linear-gradient(90deg, var(--cl-blue-logo), var(--cl-sky-logo));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-wrap: nowrap;
 }
 
 .product-headline {
@@ -249,6 +245,7 @@
     font-family: Sangbleuogserif, 'Times New Roman', sans-serif;
     font-weight: 100;
     transition: transform linear 0.3s;
+    text-wrap: nowrap;
 }
 
 .headline-h2-right {
@@ -350,7 +347,7 @@ a.read-more-a:hover {
 
 .vision-headline {
     text-align: center;
-    font-size: max(3.5em);
+    padding: 1.5rem;
     font-family: Sangbleuogsans, sans-serif;
     text-transform: capitalize;
 }
@@ -358,9 +355,9 @@ a.read-more-a:hover {
 .vision-wrapper p {
     max-width: 100%;
     width: max(50vw, 570px);
-    padding: 0 20px;
+    padding: 0 1em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: normal;
 }
 

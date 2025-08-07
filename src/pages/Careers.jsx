@@ -1,8 +1,7 @@
 import { useEffect , useRef } from 'react';
-import Layout from '../../components/Layout';
 import './careers.css';
-import Container from '../../components/Container';
-import ScrollReveal from '../../components/ScrollReveal';
+import Container from '../components/Container';
+import ScrollReveal from '../components/ScrollReveal';
 import emailjs from '@emailjs/browser';
 
 const Careers = () => {

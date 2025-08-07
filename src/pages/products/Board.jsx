@@ -1,13 +1,36 @@
-import Container  from "../Container";
-import ScrollReveal from "../ScrollReveal";
-import Atag from "../Atag";
+import Container from "../../components/Container";
+import ScrollReveal from "../../components/ScrollReveal";
+import Atag from "../../components/Atag";
 import { cn } from "../../utils/cn";
-import ResponsiveImage from "../ResponsiveImage";
+import ResponsiveImage from "../../components/ResponsiveImage";
+import { Helmet } from 'react-helmet';
+import Products from ".";
 
 const Board = () => {
     return (
         <>
-            <Container className="flex flex-col items-center gap-12 z-10 relative" id="products">
+            <Helmet>
+                <title>Ceramic Fiber Boards</title>
+                <meta
+                    name="description"
+                    content="Explore high-quality ceramic fiber blankets, modules, boards, paper & bulk fiber from Orient Ceramic Fibertech LLP. Based in Gujarat, India."
+                />
+                <meta
+                    name="keywords"
+                    content="ceramic fiber blanket, ceramic fiber boards, ceramic fiber bulk, thermal insulation products, fiber modules, insulation paper, blankets, modules, boards, paper , bulk, manufacturer in Gujarat"
+                />
+                <meta property="og:title" content="Ceramic Fiber Insulation Products | Orient Fibertech" />
+                <meta
+                    property="og:description"
+                    content="We manufacture world-class ceramic fiber insulation solutions including blankets, boards, and modules. Delivered across India from our Gujarat facility."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://orientfibertech.com/products/ceramic-fiber-blanket" />
+                <meta property="og:image" content="https://orientfibertech.com/front-image/home/blanket_crop_1800.webp" />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
+            <Products/>
+            <Container className="flex flex-col items-center gap-12 z-5 relative" id="products">
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
@@ -66,7 +89,7 @@ const Board = () => {
                                 <div className="pro-sub-detail">
                                     <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Board.pdf" download>
                                         <span className="download-span">Download PDF</span>
-                                        <img loading="lazy"  className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                        <img loading="lazy" className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -116,7 +139,7 @@ const Board = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy" src="/front-image/arrow.svg" alt="" />
                             </div>
 
                         </div>
@@ -133,7 +156,7 @@ const Board = () => {
                                     )}
                                 >
                                 </Atag>
-                                <img loading="lazy"  src="/front-image/arrow.svg" alt="" />
+                                <img loading="lazy" src="/front-image/arrow.svg" alt="" />
                             </div>
                         </div>
                     </div>

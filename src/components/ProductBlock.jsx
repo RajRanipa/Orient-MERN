@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal'; // if you're using a global scroll observer
-import '../pages/web/home.css';
+import '../pages/home.css';
 import ResponsiveImage from './ResponsiveImage';
 import { NavLink } from 'react-router-dom';
 
@@ -20,10 +20,10 @@ const ProductBlock = () => {
                     <h1>
                         Ceramic Fiber <br /> Blanket
                     </h1>
-                    <h2 className="text-ui-regular">
+                    <h2 className="text-gray-700">
                         High-Temperature Insulation Solution
                     </h2>
-                    <p className="text-ui-muted">
+                    <p className="text-gray-500">
                         Lightweight yet incredibly durable, our Ceramic Fiber Blanket provides
                         exceptional thermal resistance for high-temperature environments. This
                         <em className="italic"> high-performance ceramic fiber insulation </em>
@@ -38,10 +38,10 @@ const ProductBlock = () => {
                 {/* Image Section */}
                 <ScrollReveal className="product-details lg:text-right lg:items-end md:text-right md:items-end" animation='fade-right' id="board-desc">
                     <h1>Ceramic Fiber <br />Board</h1>
-                    <h2 className="text-ui-regular">
+                    <h2 className="text-gray-700">
                         Durable High-Temperature Insulation
                     </h2>
-                    <p className="text-ui-muted">
+                    <p className="text-gray-500">
                         Our <strong>Ceramic Fiber Board</strong> is engineered for extreme temperatures,
                         providing unmatched thermal insulation and durability. Constructed from
                         <em>alumina-silicate fibers</em>, it resists thermal shock and chemical erosion, making
@@ -69,10 +69,10 @@ const ProductBlock = () => {
                     <h1>
                         Ceramic Fiber <br />Bulk
                     </h1>
-                    <h2 className="text-ui-regular">
+                    <h2 className="text-gray-700">
                         Versatile Thermal Insulation Material
                     </h2>
-                    <p className="text-ui-muted">
+                    <p className="text-gray-500">
                         Composed of high-purity <em>aluminosilicate fibers</em>, our Ceramic Fiber
                         Bulk offers exceptional thermal resistance and flexibility. A cornerstone
                         for creating other ceramic fiber products, it delivers <strong>low thermal conductivity
@@ -87,16 +87,16 @@ const ProductBlock = () => {
                     <h1>
                         Ceramic Fiber <br /> Module
                     </h1>
-                    <h2 className="text-ui-regular">
+                    <h2 className="text-gray-700">
                         Pre-Engineered High-Temperature Insulation
                     </h2>
-                    <p className="text-ui-muted">
+                    <p className="text-gray-500">
                         Our <strong>Ceramic Fiber Modules</strong> are designed for high-temperature industrial
                         environments, offering advanced thermal stability and energy efficiency. With
                         pre-engineered anchoring systems and compressed ceramic fiber blankets, these modules
                         ensure quick installation and long-lasting insulation for furnaces, kilns, and more.
                     </p>
-                    <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Learn More About Ceramic Fiber Module Features</NavLink>
+                    <NavLink to="/products/ceramic-fiber-module" className="read-more-a" >Learn More About Ceramic Fiber Module Features</NavLink>
                 </ScrollReveal>
                 <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center"
                     animation="fade-left" >
@@ -116,16 +116,16 @@ const ProductBlock = () => {
                     <h1>
                         Ceramic Fiber <br />Paper
                     </h1>
-                    <h2 className="text-ui-regular">
+                    <h2 className="text-gray-700">
                         Precision High-Temperature Insulation
                     </h2>
-                    <p className="text-ui-muted">
+                    <p className="text-gray-500">
                         Lightweight and flexible, our <strong>Ceramic Fiber Paper</strong> is designed for
                         space-constrained environments requiring <em>thermal precision</em>. With excellent
                         thermal properties, it is perfect for aerospace, automotive, and industrial
                         applications. Ensure efficiency and reliability with our advanced insulation solutions.
                     </p>
-                    <NavLink to="/products/ceramic-fiber-bulk" className="read-more-a" >Explore Ceramic Fiber Paper Benefits</NavLink>
+                    <NavLink to="/products/ceramic-fiber-paper" className="read-more-a" >Explore Ceramic Fiber Paper Benefits</NavLink>
                 </ScrollReveal>
             </div>
         </>

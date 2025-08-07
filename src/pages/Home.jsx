@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Container from '../../components/Container';
+import Container from '../components/Container';
 import { lazy, Suspense } from 'react';
 const About = lazy(() => import('./About'));
 import AboutProduct from './AboutProduct';
@@ -8,7 +8,6 @@ const Home = () => {
   const [videoReady, setVideoReady] = useState(false);
   const useHeaderColor = () => {
     useEffect(() => {
-      console.log(location.pathname)
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [location.pathname]);
 

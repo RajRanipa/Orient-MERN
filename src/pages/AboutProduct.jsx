@@ -1,7 +1,7 @@
 
-import Container from '../../components/Container';
+import Container from '../components/Container';
 import './home.css';
-import ProductBlock from '../../components/ProductBlock';
+import ProductBlock from '../components/ProductBlock';
 import React, { useState, useRef, useEffect } from 'react';
 
 const aboutData = [
@@ -136,21 +136,21 @@ const AboutProduct = () => {
 
     return (
 
-        <Container className="flex flex-col items-center gap-12 z-10 relative" padding="true" id="products">
+        <Container className="flex flex-col items-center gap-12 z-5 relative" padding="true" id="products">
 
             {/* Text Content  */}
-            <div className="product-head" id="product_head">
-                <h1 className="text-center text-[3.2em]">Our Products</h1>
+            <div className="w-full p-1 product-title" id="product_title">
+                <h1 className="text-center text-[3em] md:text-[3.8em]">Our Products</h1>
             </div>
             <div className="product-headline" id="product_headline">
-                <h2 className="headline-h2-right text-[2.8em]">TOP QUALITY IS</h2>
-                <h2 className="headline-h2-left text-[2.8em]">OUR FIRST PRIORITY</h2>
+                <h2 className="headline-h2-right text-[2.1em] sm:text-[2.8em] md:text-[3.1em]">TOP QUALITY IS</h2>
+                <h2 className="headline-h2-left  text-[2.1em] sm:text-[2.8em] md:text-[3.1em]">OUR FIRST PRIORITY</h2>
             </div>
             <div className="product-description">
                 <ProductBlock />
             </div>
             <div className="vision-wrapper">
-                <h3 className="vision-headline">Shaping Tomorrow with Purpose</h3>
+                <h3 className="vision-headline text-[3em] md:text-[3.8em]">Shaping Tomorrow with Purpose</h3>
                 <p>Our journey is driven by innovative minds and a shared commitment to excellence, crafting
                     solutions that inspire progress and deliver value.</p>
             </div>

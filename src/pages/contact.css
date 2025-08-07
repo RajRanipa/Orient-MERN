@@ -58,11 +58,11 @@ h1.address-title {
 }
 
 .info-title-wrapper p,
-.info-address-wrapper p {
+.info-address-wrapper p,
+.google-map-link {
     font-size: 1em;
     padding-top: 0.5em;
     padding-left: 1em;
-    color: var(--cl-dark-gray);
 }
 
 .enquiry-QR-wrapper {

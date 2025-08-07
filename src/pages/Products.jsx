@@ -1,4 +1,4 @@
-import Container from '../../components/Container';
+import Container from '../components/Container';
 import './product.css';
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -58,8 +58,8 @@ const Products = () => {
   }, []);
   return (
     <>
-    <Helmet>
-        <title>Our Products | Ceramic Fiber Blankets & Insulation - Orient Fibertech</title>
+    {/* <Helmet>
+        <title>Our Products | </title>
         <meta
           name="description"
           content="Explore high-quality ceramic fiber blankets, modules, boards, paper & bulk fiber from Orient Ceramic Fibertech LLP. Based in Gujarat, India."
@@ -77,7 +77,7 @@ const Products = () => {
         <meta property="og:url" content="https://orientfibertech.com/products/ceramic-fiber-blanket" />
         <meta property="og:image" content="https://orientfibertech.com/front-image/home/blanket_crop_1800.webp" />
         <meta name="robots" content="index, follow" />
-      </Helmet>
+      </Helmet> */}
       <section className="relative min-h-fit pt-[var(--padding-top)] z-10">
         {/* === Overlay (optional, if video is too noisy) === */}
         <div className="product-header-wrapper" id="product_header_wrapper">
@@ -181,7 +181,6 @@ const Products = () => {
           </div>
         </div>
       </section>
-      <Outlet />
     </>
   );
 }

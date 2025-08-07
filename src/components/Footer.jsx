@@ -50,7 +50,9 @@ const Footer = () => {
               <ResponsiveImage folder='home' name='brand-logo' alt="logo" className="w-auto h-12" />
               <ResponsiveImage folder='home' name='text-logo' alt="logo" className="w-auto h-12" />
             </div>
-            <p className="py-4 text-gray-300">Your go-to platform for awesome features. Built with 💻 and ☕.</p>
+            <p className="py-4 pr-5 text-gray-300">
+              At Orient Ceramic Fibertech LLP, we deliver high-performance ceramic fiber solutions trusted by industries worldwide. Our commitment to quality and innovation drives everything we do.
+            </p>
           </div>
           <div className="flex flex-col items-center text-center md:text-left md:items-start p-2">
             <h2 className="text-lg font-semibold mb-3 text-gray-100">Quick Links</h2>

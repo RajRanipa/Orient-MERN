@@ -1,6 +1,6 @@
-import Container from '../../components/Container';
-import ResponsiveImage from '../../components/ResponsiveImage';
-import ScrollReveal from '../../components/ScrollReveal';
+import Container from '../components/Container';
+import ResponsiveImage from '../components/ResponsiveImage';
+import ScrollReveal from '../components/ScrollReveal';
 import './home.css';
 import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

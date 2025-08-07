@@ -1,8 +1,8 @@
 import { useEffect , useRef } from 'react';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
-import Container from '../../components/Container';
+import Container from '../components/Container';
 import './contact.css';
-import ScrollReveal from '../../components/ScrollReveal';
+import ScrollReveal from '../components/ScrollReveal';
 import { Helmet } from 'react-helmet';
 import emailjs from '@emailjs/browser';
 
@@ -68,8 +68,6 @@ const Contact = () => {
           <div className="info-title-wrapper">
             <h1 className="info-title">for sales enquiry</h1>
             <p className="flex gap-2 items-center"> <FiMail /> orientfibertechllp@gmail.com</p>
-            {/* <p> <FiMapPin />orientfibertechllp@gmail.com</p>
-                            <p> <FiMap />orientfibertechllp@gmail.com</p> */}
             <p className="flex gap-2 items-center"> <FiPhone /> +91 98253 55877</p>
           </div>
           <div className="info-title-wrapper">
@@ -111,6 +109,16 @@ const Contact = () => {
                   Hasanpar
                   Wankaner – 363 621, Gujarat, India.</p>
                 <p>orientfibertechllp@gmail.com</p>
+                <div itemScope itemType="https://schema.org/Organization" className='lg:flex-[0_0_50%] md:flex-[0_0_60%]'>
+                  <div itemProp="addressPoint" itemScope itemType="https://schema.org/addressPoint">
+                    <span itemProp="address" className='group flex items-center justify-center gap-2 pt-[0.5em] w-fit'>
+                      <a href="https://maps.app.goo.gl/4RLM1eWvzkdxZeCf8" target="_blank" rel="noopener noreferrer" className="peer text-[var(--cl-blue-logo)] pl-[1em] text-[0.98em] hover:underline w-full">
+                        google map link
+                      </a>
+                      <img loading="lazy" src="/front-image/arrow.svg" alt="arrow icon" className='w-[1em] rotate-[-45deg] translate-x-[-50%] translate-y-[50%] transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-x-[0] group-hover:translate-y-[0]'/>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
