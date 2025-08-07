@@ -57,7 +57,7 @@ const Contact = () => {
         property="og:description"
         content="Contact Orient Ceramic Fibertech LLP for premium ceramic fiber insulation products in India. Fast response, expert support."
       />
-      <meta property="og:url" content="https://orientfibertech.com/Contact" />
+      <meta property="og:url" content="https://orientfibertech.com/contact" />
       <meta property="og:type" content="website" />
     </Helmet>
     <Container title="" className='pt-[var(--padding-top)]' childClassName='gradient-bg'>

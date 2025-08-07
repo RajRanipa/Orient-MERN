@@ -6,9 +6,9 @@ import { useLocation } from 'react-router-dom';
 export const navLinks = [
   { name: 'Home', href: '/', showInFooter: true },
   { name: 'About', href: '/#about_us', showInFooter: true },
-  { name: 'Products', href: '/products/ceramic-fiber-blanket', showInFooter: true },
-  { name: 'Career', href: '/Career', showInFooter: true },
-  { name: 'Contact', href: '/Contact', showInFooter: true },
+  { name: 'Products', href: '/ceramic-fiber-blanket', showInFooter: true },
+  { name: 'Career', href: '/career', showInFooter: true },
+  { name: 'Contact', href: '/contact', showInFooter: true },
 ];
 
 

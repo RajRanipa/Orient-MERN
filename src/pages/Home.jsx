@@ -3,6 +3,7 @@ import Container from '../components/Container';
 import { lazy, Suspense } from 'react';
 const About = lazy(() => import('./About'));
 import AboutProduct from './AboutProduct';
+import Loading from '../components/Loading';
 
 const Home = () => {
   const [videoReady, setVideoReady] = useState(false);
@@ -149,7 +150,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <Suspense fallback={<div>Loading about section...</div>}>
+      <Suspense fallback={<Loading title="Loading about section..."/>}>
         <About />
       </Suspense>
       <AboutProduct />

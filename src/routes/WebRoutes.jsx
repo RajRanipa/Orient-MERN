@@ -6,6 +6,7 @@ import PageTransition from '../components/PageTransition';
 import WebLayout from '../layouts/WebLayout';
 import Certificate from '../components/Certificate';
 import { lazy, Suspense } from "react";
+import Loading from '../components/Loading';
 const Blanket = lazy(() => import("../pages/products/Blanket"));
 // import Blanket from "../pages/products/Blanket"
 const Board = lazy(() => import('../pages/products/Board'));
@@ -23,36 +24,36 @@ const WebRoutes = () => {
     <Routes>
       <Route element={<WebLayout />}>
         <Route index path="/" element={<PageTransition><Home /></PageTransition>} />
-        <Route path="/products/ceramic-fiber-blanket" element={
-          <Suspense fallback={<div>Loading Blanket...</div>}>
+        <Route path="/ceramic-fiber-blanket" element={
+          <Suspense fallback={<Loading title={"Loading Blanket..."}/>}>
             <PageTransition><Blanket /></PageTransition>
           </Suspense>
         } />
-        <Route path="/products/ceramic-fiber-board" element={
-          <Suspense fallback={<div>Loading Blanket...</div>}>
+        <Route path="/ceramic-fiber-board" element={
+          <Suspense fallback={<Loading title={"Loading Board..."}/>}>
             <PageTransition><Board /></PageTransition>
           </Suspense>
         } />
-        <Route path="/products/ceramic-fiber-bulk" element={
-          <Suspense fallback={<div>Loading Blanket...</div>}>
+        <Route path="/ceramic-fiber-bulk" element={
+          <Suspense fallback={<Loading title={"Loading Bulk..."}/>}>
             <PageTransition><Bulk /></PageTransition>
           </Suspense>
         } />
-        <Route path="/products/ceramic-fiber-module" element={
-          <Suspense fallback={<div>Loading Blanket...</div>}>
+        <Route path="/ceramic-fiber-module" element={
+          <Suspense fallback={<Loading title={"Loading Module..."}/>}>
             <PageTransition><Module /></PageTransition>
           </Suspense>
         } />
-        <Route path="/products/ceramic-fiber-paper" element={
-          <Suspense fallback={<div>Loading Blanket...</div>}>
+        <Route path="/ceramic-fiber-paper" element={
+          <Suspense fallback={<Loading title={"Loading Paper..."}/>}>
             <PageTransition><Paper /></PageTransition>
           </Suspense>
         } />
-        {/* <Route path="/products/ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
-        <Route path="/products/ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
-        <Route path="/products/ceramic-fiber-bulk" element={<PageTransition><Bulk /></PageTransition>} />
-        <Route path="/products/ceramic-fiber-module" element={<PageTransition><Module /></PageTransition>} />
-        <Route path="/products/ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} /> */}
+        {/* <Route path="/ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
+        <Route path="/ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
+        <Route path="/ceramic-fiber-bulk" element={<PageTransition><Bulk /></PageTransition>} />
+        <Route path="/ceramic-fiber-module" element={<PageTransition><Module /></PageTransition>} />
+        <Route path="/ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} /> */}
         <Route path="/career" element={<PageTransition><Careers /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/certificates" element={<PageTransition><Certificate /></PageTransition>} />
