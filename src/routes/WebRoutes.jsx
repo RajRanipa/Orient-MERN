@@ -7,16 +7,22 @@ import WebLayout from '../layouts/WebLayout';
 import Certificate from '../components/Certificate';
 import { lazy, Suspense } from "react";
 const Blanket = lazy(() => import("../pages/products/Blanket"));
+// import Blanket from "../pages/products/Blanket"
 const Board = lazy(() => import('../pages/products/Board'));
+// import Board from '../pages/products/Board'
 const Bulk = lazy(() => import('../pages/products/Bulk'));
+// import Bulk from '../pages/products/Bulk'
 const Module = lazy(() => import('../pages/products/Module'));
+// import Module from '../pages/products/Module'
 const Paper = lazy(() => import('../pages/products/Paper'));
+// import Paper from '../pages/products/Paper'
 
 const WebRoutes = () => {
   return (
-      // Public pages 
-      <Routes element={<WebLayout />}>
-        <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+    // Public pages 
+    <Routes>
+      <Route element={<WebLayout />}>
+        <Route index path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/products/ceramic-fiber-blanket" element={
           <Suspense fallback={<div>Loading Blanket...</div>}>
             <PageTransition><Blanket /></PageTransition>
@@ -42,14 +48,16 @@ const WebRoutes = () => {
             <PageTransition><Paper /></PageTransition>
           </Suspense>
         } />
-        {/* <Route path="/products/ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
+        {/* <Route path="/products/ceramic-fiber-blanket" element={<PageTransition><Blanket /></PageTransition>} />
+        <Route path="/products/ceramic-fiber-board" element={<PageTransition><Board /></PageTransition>} />
         <Route path="/products/ceramic-fiber-bulk" element={<PageTransition><Bulk /></PageTransition>} />
         <Route path="/products/ceramic-fiber-module" element={<PageTransition><Module /></PageTransition>} />
         <Route path="/products/ceramic-fiber-paper" element={<PageTransition><Paper /></PageTransition>} /> */}
         <Route path="/career" element={<PageTransition><Careers /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/certificates" element={<PageTransition><Certificate /></PageTransition>} />
-      </Routes>
+      </Route>
+    </Routes>
   );
 };
 
