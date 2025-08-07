@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Careers from '../pages/Careers';
 import Contact from '../pages/Contact';
@@ -15,7 +15,7 @@ const Paper = lazy(() => import('../pages/products/Paper'));
 const WebRoutes = () => {
   return (
       // Public pages 
-      <Route element={<WebLayout />}>
+      <Routes element={<WebLayout />}>
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/products/ceramic-fiber-blanket" element={
           <Suspense fallback={<div>Loading Blanket...</div>}>
@@ -49,7 +49,7 @@ const WebRoutes = () => {
         <Route path="/career" element={<PageTransition><Careers /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/certificates" element={<PageTransition><Certificate /></PageTransition>} />
-      </Route>
+      </Routes>
   );
 };
 
