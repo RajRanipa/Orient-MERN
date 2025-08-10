@@ -89,7 +89,7 @@ const Board = () => {
                                     <span className="note-span">customized size available*</span>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Board.pdf" download>
+                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/pdf/Board.pdf" download>
                                         <span className="download-span">Download PDF</span>
                                         <img loading="lazy" className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>

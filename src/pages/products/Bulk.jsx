@@ -66,7 +66,7 @@ const Bulk = () => {
                                     <p>1260 - 1425 °C</p>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/Bulk.pdf" download>
+                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/pdf/Bulk.pdf" download>
                                         <span className="download-span">Download PDF</span>
                                         <img loading="lazy" className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
