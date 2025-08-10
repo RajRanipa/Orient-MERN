@@ -71,12 +71,14 @@ const Module = () => {
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>module type</h2>
-                                    <p>folded module</p>
-                                    <p>anchor module</p>
+                                    <p>folded modules</p>
+                                    <p>anchor modules</p>
+                                    <p>Anchor loc 3 modules</p>
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>anchor type</h2>
                                     <p>cerlock anchor</p>
+                                    <p>Base bar anchor</p>
                                     <span className="note-span">customized anchor available*</span>
                                 </div>
                                 <div className="pro-sub-detail">

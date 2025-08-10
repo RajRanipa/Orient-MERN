@@ -58,7 +58,9 @@ const Board = () => {
                                 <h1>specification</h1>
                                 <div className="pro-sub-detail">
                                     <h2>density range</h2>
-                                    <p>reg. <br />high-density</p>
+                                    <p>reg. 320-384 kg/m3</p>
+                                    <p>H.D. 416-480 kg/m3</p>
+                                    <p>H.S. 700-780 kg/m3</p>
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>temperature range</h2>

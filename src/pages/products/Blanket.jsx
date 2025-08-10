@@ -68,7 +68,10 @@ const Blanket = () => {
                                 </div>
                                 <div className="pro-sub-detail">
                                     <h2>size</h2>
+                                    <p>7300 x 610 x 6 mm</p>
                                     <p>7300 x 610 x 12 mm</p>
+                                    <p>7300 x 610 x 19 mm</p>
+                                    <p>7300 x 610 x 38 mm</p>
                                     <p>7300 x 610 x 25 mm</p>
                                     <p>3650 x 610 x 50 mm</p>
                                     <span className="note-span">customized size available*</span>
