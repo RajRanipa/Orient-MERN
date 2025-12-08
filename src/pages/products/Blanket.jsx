@@ -6,7 +6,7 @@ import Atag from "../../components/Atag";
 import { cn } from "../../utils/cn";
 import ResponsiveImage from "../../components/ResponsiveImage";
 import Products from "../Products";
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Blanket = () => {
     return (

@@ -2,7 +2,7 @@ import Container from '../components/Container';
 import './product.css';
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Products = () => {
   const location = useLocation();

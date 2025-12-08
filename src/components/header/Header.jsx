@@ -140,7 +140,7 @@ const Header = () => {
           </div>
         </div>
       </Container>
-      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} blurValue={blurValue} />
+      {menuOpen && <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} blurValue={blurValue} />}
     </header>
   );
 };

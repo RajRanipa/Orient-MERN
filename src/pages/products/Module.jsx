@@ -3,7 +3,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 import Atag from "../../components/Atag";
 import { cn } from "../../utils/cn";
 import ResponsiveImage from "../../components/ResponsiveImage";
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Products from "../Products";
 
 const Module = () => {
