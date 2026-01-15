@@ -131,7 +131,7 @@ const Home = () => {
         <Container className="relative z-20 flex flex-col items-center justify-center text-center h-[calc(100vh-72px)]">
           <div className="flex flex-col items-center justify-center gap-4" id={"hero_text_div"}>
             <h1 className="leading-[1.5] text-[4em] text-white font-sangbleu w-full md:w-[65%]  capitalize">
-              <strong> We are manufacturer of ceramiac fiber products</strong>
+              <strong> We are manufacturer of ceramic fiber products</strong>
             </h1>
             <p className="mt-4 max-w-xl text-white text-opacity-90 text-lg">
               Discover ceramic fiber insulation reimagined for the modern industry.
