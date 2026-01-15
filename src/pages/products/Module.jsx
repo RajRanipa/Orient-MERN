@@ -34,7 +34,7 @@ const Module = () => {
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
-                            <p>Crafted from folded and compressed ceramic fiber blankets, Ceramic Fiber Modules are designed for use in extreme-temperature environments. Equipped with pre-installed anchoring systems, they offer enhanced thermal insulation, reduce installation time, and boost energy efficiency in furnaces, kilns, and industrial equipment.</p>
+                            <p>Crafted from folded and compressed ceramic fiber blankets, Orwool Modules are designed for use in extreme-temperature environments. Equipped with pre-installed anchoring systems, they offer enhanced thermal insulation, reduce installation time, and boost energy efficiency in furnaces, kilns, and industrial equipment.</p>
                         </div>
                     </div>
                 </div>
@@ -82,14 +82,33 @@ const Module = () => {
                                     <span className="note-span">customized anchor available*</span>
                                 </div>
                                 <div className="pro-sub-detail">
-                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/pdf/Module.pdf" download>
-                                        <span className="download-span">Download PDF</span>
+                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/pdf/Orlock_Module.pdf" download>
+                                        <span className="download-span">Orlock Module PDF</span>
+                                        <img loading="lazy" className="arrow-img" src="/front-image/arrow.svg" alt="" />
+                                    </a>
+                                    <a className="a-download-link justify-self-center md:justify-self-start" href="/front-image/pdf/Orlock_3_Module.pdf" download>
+                                        <span className="download-span">Orlock 3 Module PDF</span>
                                         <img loading="lazy" className="arrow-img" src="/front-image/arrow.svg" alt="" />
                                     </a>
                                 </div>
                             </div>
                         </ScrollReveal>
                         <ScrollReveal className="pro-specification-div" animation="fade-left" id="right_specification_div">
+                            <div className="pro-wrap text-center md:text-start">
+                                <h1> module type</h1>
+                                <div className="pro-sub-detail">
+                                    <div className="application-img items-center justify-center md:items-start md:justify-start">
+                                        <div className="app-img">
+                                            <ResponsiveImage folder="product" name="OM" alt="furnace" />
+                                            <p>orlock Module</p>
+                                        </div>
+                                        <div className="app-img">
+                                            <ResponsiveImage folder="product" name="OM_3" alt="furnace" />
+                                            <p>orLock-3 Module</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="pro-wrap text-center md:text-start">
                                 <h1>application</h1>
                                 <div className="pro-sub-detail">
@@ -118,7 +137,7 @@ const Module = () => {
                     <div className="more-pro-wrapper">
                         <h1>related products</h1>
                         <div className="explore-wrapper border-b-[0.5px] border-black w-full md:w-[50%] md:border-r-[0.5px] md:border-b-0">
-                            <p>ceramic fiber <br />blanket</p>
+                            <p>orwool <br />blanket</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
@@ -135,7 +154,7 @@ const Module = () => {
 
                         </div>
                         <div className="explore-wrapper border-t-[0.5px] border-black w-full md:w-[50%] md:border-l-[0.5px] md:border-t-0">
-                            <p>ceramic fiber <br />bulk</p>
+                            <p>orwool <br />bulk</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}

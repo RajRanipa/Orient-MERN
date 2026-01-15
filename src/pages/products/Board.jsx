@@ -34,7 +34,7 @@ const Board = () => {
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
-                            <p>Made from high-purity alumina-silicate fibers, Ceramic Fiber Boards are dense, rigid insulation materials ideal for high-temperature applications. They offer outstanding mechanical strength, thermal insulation, and resistance to chemical erosion and thermal shock. Applications include furnace linings, kiln insulation, and high-temperature gaskets, ensuring reliable performance in the harshest conditions.</p>
+                            <p>Made from high-purity alumina-silicate fibers, Orwool Boards are dense, rigid insulation materials ideal for high-temperature applications. They offer outstanding mechanical strength, thermal insulation, and resistance to chemical erosion and thermal shock. Applications include furnace linings, kiln insulation, and high-temperature gaskets, ensuring reliable performance in the harshest conditions.</p>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ const Board = () => {
                     <div className="more-pro-wrapper">
                         <h1>related products</h1>
                         <div className="explore-wrapper border-b-[0.5px] border-black w-full md:w-[50%] md:border-r-[0.5px] md:border-b-0">
-                            <p>ceramic fiber <br />module</p>
+                            <p>orwool <br />module</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
@@ -146,7 +146,7 @@ const Board = () => {
 
                         </div>
                         <div className="explore-wrapper border-t-[0.5px] border-black w-full md:w-[50%] md:border-l-[0.5px] md:border-t-0">
-                            <p>ceramic fiber <br />bulk</p>
+                            <p>orwool <br />bulk</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}

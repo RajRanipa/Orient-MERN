@@ -34,7 +34,7 @@ const Paper = () => {
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
-                            <p>Lightweight and flexible, Ceramic Fiber Paper is an advanced insulation material designed for high-temperature environments. It delivers exceptional thermal insulation, making it suitable for industries like aerospace, automotive, and manufacturing, especially where thin insulation layers are essential.</p>
+                            <p>Lightweight and flexible, Orwool Paper is an advanced insulation material designed for high-temperature environments. It delivers exceptional thermal insulation, making it suitable for industries like aerospace, automotive, and manufacturing, especially where thin insulation layers are essential.</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const Paper = () => {
                     <div className="more-pro-wrapper">
                         <h1>related products</h1>
                         <div className="explore-wrapper border-b-[0.5px] border-black w-full md:w-[50%] md:border-r-[0.5px] md:border-b-0">
-                            <p>ceramic fiber <br />bulk</p>
+                            <p>orwool <br />bulk</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
@@ -127,7 +127,7 @@ const Paper = () => {
 
                         </div>
                         <div className="explore-wrapper border-t-[0.5px] border-black w-full md:w-[50%] md:border-l-[0.5px] md:border-t-0">
-                            <p>ceramic fiber <br />blanket</p>
+                            <p>orwool <br />blanket</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}

@@ -34,7 +34,7 @@ const Bulk = () => {
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
-                            <p>Composed of high-purity aluminosilicate fibers, Ceramic Fiber Bulk is a raw material used for creating blankets, boards, and paper. With exceptional thermal resistance, low thermal conductivity, and thermal shock resistance, it serves as a crucial component in industries requiring high-performance heat management solutions.</p>
+                            <p>Composed of high-purity aluminosilicate fibers, Orwool Bulk is a raw material used for creating blankets, boards, and paper. With exceptional thermal resistance, low thermal conductivity, and thermal shock resistance, it serves as a crucial component in industries requiring high-performance heat management solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ const Bulk = () => {
                     <div className="more-pro-wrapper">
                         <h1>related products</h1>
                         <div className="explore-wrapper border-b-[0.5px] border-black w-full md:w-[50%] md:border-r-[0.5px] md:border-b-0">
-                            <p>ceramic fiber <br />paper</p>
+                            <p>orwool <br />paper</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
@@ -123,7 +123,7 @@ const Bulk = () => {
 
                         </div>
                         <div className="explore-wrapper border-t-[0.5px] border-black w-full md:w-[50%] md:border-l-[0.5px] md:border-t-0">
-                            <p>ceramic fiber <br />board</p>
+                            <p>orwool <br />board</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}

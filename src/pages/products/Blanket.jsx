@@ -36,7 +36,7 @@ const Blanket = () => {
                 <div className="product-details-wrapper">
                     <div className="product-brief-wrapper">
                         <div className="product-brief" id="product_brief">
-                            <p>The Ceramic Fiber Blanket is made from interwoven ceramic fibers, designed to handle temperatures up to 1425°C. It combines low thermal conductivity with exceptional resistance to thermal shock, making it ideal for industrial uses like furnace linings, kiln insulation, and boiler seals. Its lightweight and flexible structure ensure seamless installation and long-lasting performance.</p>
+                            <p>The Orwool Blanket is made from interwoven ceramic fibers, designed to handle temperatures up to 1425°C. It combines low thermal conductivity with exceptional resistance to thermal shock, making it ideal for industrial uses like furnace linings, kiln insulation, and boiler seals. Its lightweight and flexible structure ensure seamless installation and long-lasting performance.</p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ const Blanket = () => {
                     <div className="more-pro-wrapper">
                         <h1>related products</h1>
                         <div className="explore-wrapper border-b-[0.5px] border-black w-full md:w-[50%] md:border-r-[0.5px] md:border-b-0">
-                            <p>ceramic fiber <br />board</p>
+                            <p>Orwool fiber <br />board</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}
@@ -134,7 +134,7 @@ const Blanket = () => {
 
                         </div>
                         <div className="explore-wrapper border-t-[0.5px] border-black w-full md:w-[50%] md:border-l-[0.5px] md:border-t-0">
-                            <p>ceramic fiber <br />module</p>
+                            <p>orwool <br />module</p>
                             <div className="a-tag-wrapper">
                                 <Atag
                                     key={"explore"}

@@ -18,38 +18,38 @@ const ProductBlock = () => {
                 {/* Details Section */}
                 <ScrollReveal animation="fade-left" className="product-details" id="blanket-desc">
                     <h1>
-                        Ceramic Fiber <br /> Blanket
+                        Orwool  <br /> Blanket
                     </h1>
                     <h2 className="text-gray-700">
                         High-Temperature Insulation Solution
                     </h2>
                     <p className="text-gray-500">
-                        Lightweight yet incredibly durable, our Ceramic Fiber Blanket provides
+                        Lightweight yet incredibly durable, our Orwool Blanket provides
                         exceptional thermal resistance for high-temperature environments. This
                         <em className="italic"> high-performance ceramic fiber insulation </em>
                         withstands <strong className="font-semibold"> temperatures up to 1425°C</strong>,
                         ensuring energy efficiency and reliability in industrial applications such as furnace
                         linings, kiln insulation, and boiler seals.
                     </p>
-                    <NavLink to="/ceramic-fiber-blanket" className="read-more-a" >Explore Ceramic Fiber Blanket Applications</NavLink>
+                    <NavLink to="/ceramic-fiber-blanket" className="read-more-a" >Explore Orwool Blanket Applications</NavLink>
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col-reverse  lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
                 {/* Image Section */}
                 <ScrollReveal className="product-details lg:text-right lg:items-end md:text-right md:items-end" animation='fade-right' id="board-desc">
-                    <h1>Ceramic Fiber <br />Board</h1>
+                    <h1>Orwool <br />Board</h1>
                     <h2 className="text-gray-700">
                         Durable High-Temperature Insulation
                     </h2>
                     <p className="text-gray-500">
-                        Our <strong>Ceramic Fiber Board</strong> is engineered for extreme temperatures,
+                        Our <strong>Orwool Board</strong> is engineered for extreme temperatures,
                         providing unmatched thermal insulation and durability. Constructed from
                         <em>alumina-silicate fibers</em>, it resists thermal shock and chemical erosion, making
                         it ideal for furnace linings, kiln insulation, and high-temperature gaskets. Ensure
                         reliable performance in heavy-duty manufacturing environments with our high-quality
                         boards.
                     </p>
-                    <NavLink to="/ceramic-fiber-board" className="read-more-a" >Discover Ceramic Fiber Board Applications</NavLink>
+                    <NavLink to="/ceramic-fiber-board" className="read-more-a" >Discover Orwool Board Applications</NavLink>
                 </ScrollReveal>
                 {/* Details Section */}
                 <ScrollReveal animation='fade-left' id="board-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center">
@@ -67,36 +67,36 @@ const ProductBlock = () => {
                 {/* Details Section */}
                 <ScrollReveal className="product-details" animation="fade-left" id="bulk-desc">
                     <h1>
-                        Ceramic Fiber <br />Bulk
+                        Orwool <br />Bulk
                     </h1>
                     <h2 className="text-gray-700">
                         Versatile Thermal Insulation Material
                     </h2>
                     <p className="text-gray-500">
-                        Composed of high-purity <em>aluminosilicate fibers</em>, our Ceramic Fiber
+                        Composed of high-purity <em>aluminosilicate fibers</em>, our Orwool
                         Bulk offers exceptional thermal resistance and flexibility. A cornerstone
                         for creating other ceramic fiber products, it delivers <strong>low thermal conductivity
                             and superior shock resistance</strong>. Perfect for industrial environments managing
                         extreme heat, it ensures efficiency and reliability in diverse applications.
                     </p>
-                    <NavLink to="/ceramic-fiber-bulk" className="read-more-a" >Learn More About Ceramic Fiber Bulk Applications</NavLink>
+                    <NavLink to="/ceramic-fiber-bulk" className="read-more-a" >Learn More About Orwool Bulk Applications</NavLink>
                 </ScrollReveal>
             </div>
             <div className="w-full flex flex-col-reverse lg:flex-row md:flex-row items-center justify-between gap-10 lg:gap-[5rem]">
                 <ScrollReveal className="product-details lg:text-right lg:items-end md:text-right md:items-end" animation="fade-right" id="module-desc">
                     <h1>
-                        Ceramic Fiber <br /> Module
+                        Orwool <br /> Module
                     </h1>
                     <h2 className="text-gray-700">
                         Pre-Engineered High-Temperature Insulation
                     </h2>
                     <p className="text-gray-500">
-                        Our <strong>Ceramic Fiber Modules</strong> are designed for high-temperature industrial
+                        Our <strong>Orwool Modules</strong> are designed for high-temperature industrial
                         environments, offering advanced thermal stability and energy efficiency. With
-                        pre-engineered anchoring systems and compressed ceramic fiber blankets, these modules
+                        pre-engineered anchoring systems and compressed Orwool blankets, these modules
                         ensure quick installation and long-lasting insulation for furnaces, kilns, and more.
                     </p>
-                    <NavLink to="/ceramic-fiber-module" className="read-more-a" >Learn More About Ceramic Fiber Module Features</NavLink>
+                    <NavLink to="/ceramic-fiber-module" className="read-more-a" >Learn More About Orwool Module Features</NavLink>
                 </ScrollReveal>
                 <ScrollReveal id="module-img" className="relative flex-1 max-w-[80%] sm:max-w-[90%] lg:max-w-full w-full lg:flex-[0_1_40%] h-auto overflow-hidden bg-center bg-cover flex items-center justify-center"
                     animation="fade-left" >
@@ -114,18 +114,18 @@ const ProductBlock = () => {
                 {/* Details Section */}
                 <ScrollReveal className="product-details" id="paper-decs">
                     <h1>
-                        Ceramic Fiber <br />Paper
+                        Orwool <br />Paper
                     </h1>
                     <h2 className="text-gray-700">
                         Precision High-Temperature Insulation
                     </h2>
                     <p className="text-gray-500">
-                        Lightweight and flexible, our <strong>Ceramic Fiber Paper</strong> is designed for
+                        Lightweight and flexible, our <strong>Orwool Paper</strong> is designed for
                         space-constrained environments requiring <em>thermal precision</em>. With excellent
                         thermal properties, it is perfect for aerospace, automotive, and industrial
                         applications. Ensure efficiency and reliability with our advanced insulation solutions.
                     </p>
-                    <NavLink to="/ceramic-fiber-paper" className="read-more-a" >Explore Ceramic Fiber Paper Benefits</NavLink>
+                    <NavLink to="/ceramic-fiber-paper" className="read-more-a" >Explore Orwool Paper Benefits</NavLink>
                 </ScrollReveal>
             </div>
         </>
