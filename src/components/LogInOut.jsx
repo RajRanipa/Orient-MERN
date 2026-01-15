@@ -14,7 +14,7 @@ const LogInOut = ({ variant = 'header', className = '' }) => {
 
   return (
     <a
-      href='https://erp.orientfibertech.com'
+      href='https://erp.orientfibertech.com/login'
       className={`${combinedStyle} flex items-center gap-2 px-4 py-2 rounded-md`}
       aria-label="Log in"
       id="loginout_button"
