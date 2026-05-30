@@ -76,7 +76,7 @@ const ResponsiveImage = ({
         className={cn(
           "absolute inset-0 w-full h-full object-cover",
           "blur-xl scale-110", // scale-110 hides the unblurred white edges caused by the CSS blur filter
-          "transition-opacity duration-700 ease-in-out",
+          "transition-opacity duration-700 ease-in-out", className,
           isLoaded ? "opacity-0 hidden" : "opacity-100"
         )}
       />
@@ -96,7 +96,7 @@ const ResponsiveImage = ({
         className={cn(
           "relative w-full h-full object-cover",
           "transition-opacity duration-700 ease-in-out",
-          isLoaded ? "opacity-100" : "opacity-0 hidden", className
+          isLoaded ? "opacity-100" : "opacity-0", className
         )}
       />
     </div>
