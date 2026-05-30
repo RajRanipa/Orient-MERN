@@ -66,7 +66,7 @@ const ResponsiveImage = ({
   return (
     // 1. Wrapper: Needs relative positioning to stack the images. 
     // We apply your custom className here so it dictates the size of the container.
-    <div className={cn("relative overflow-hidden w-full h-full", className)}>
+    <div className={cn("relative w-full h-full")}>
       
       {/* 2. Low-Res Blurred Placeholder */}
       <img
@@ -77,7 +77,7 @@ const ResponsiveImage = ({
           "absolute inset-0 w-full h-full object-cover",
           "blur-xl scale-110", // scale-110 hides the unblurred white edges caused by the CSS blur filter
           "transition-opacity duration-700 ease-in-out",
-          isLoaded ? "opacity-0" : "opacity-100"
+          isLoaded ? "opacity-0 hidden" : "opacity-100"
         )}
       />
 
@@ -96,7 +96,7 @@ const ResponsiveImage = ({
         className={cn(
           "relative w-full h-full object-cover",
           "transition-opacity duration-700 ease-in-out",
-          isLoaded ? "opacity-100" : "opacity-0"
+          isLoaded ? "opacity-100" : "opacity-0 hidden", className
         )}
       />
     </div>
