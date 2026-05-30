@@ -67,22 +67,22 @@ const Contact = () => {
         <ScrollReveal className="enquiry-info-wrapper flex-50-child" id="enquiry_div" animation='fade-left'>
           <div className="info-title-wrapper">
             <h1 className="info-title">for sales enquiry</h1>
-            <p className="flex gap-2 items-center"> <FiMail /> orientfibertechllp@gmail.com</p>
-            <p className="flex gap-2 items-center"> <FiPhone /> +91 98253 55877</p>
+            <p className="flex gap-2 items-center"> <FiMail /> sales@orientfibertechllp.com</p>
+            <p className="flex gap-2 items-center"> <FiPhone /> +91 9825 35 5877</p>
           </div>
           <div className="info-title-wrapper">
             <h1 className="info-title">for Marketing enquiry</h1>
             <p className="flex gap-2 items-center"> <FiMail /> orientfibertechllp@gmail.com</p>
-            <p className="flex gap-2 items-center"> <FiPhone /> +91 7575078616</p>
+            <p className="flex gap-2 items-center"> <FiPhone /> +91 9997 96 9994</p>
           </div>
           <div className="info-title-wrapper">
             <h1 className="info-title">For HR & Account related enquiry</h1>
-            <p className="flex gap-2 items-center"> <FiPhone /> +91 98256 73951</p>
+            <p className="flex gap-2 items-center"> <FiPhone /> +91 9825 67 3951</p>
           </div>
           <div className="info-title-wrapper">
             <h1 className="info-title">For Other enquiry</h1>
             <p className="flex gap-2 items-center"> <FiMail /> orientfibertechllp@gmail.com</p>
-            <p className="flex gap-2 items-center"> <FiPhone /> +91 90238 78926</p>
+            <p className="flex gap-2 items-center"> <FiPhone /> +91 9023 87 8926</p>
           </div>
         </ScrollReveal>
         <ScrollReveal className="enquiry-QR-wrapper flex-50-child" id="enquiry_qr_div" animation='fade-right'>
